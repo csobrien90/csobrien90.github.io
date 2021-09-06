@@ -1,23 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Header from './components/Header';
-import Slider from './components/Slider';
-import About from './components/About';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <header>
-      <Header />
-    </header>
-    <section>
-      <h2>My Projects</h2>
-      <Slider />
-    </section>
-    <section>
-      <About />
-    </section>
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
