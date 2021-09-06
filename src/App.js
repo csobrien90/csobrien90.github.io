@@ -2,20 +2,15 @@ import React from 'react';
 import Header from './components/Header';
 import Slider from './components/Slider';
 import About from './components/About';
-import About from './components/Footer';
+import Footer from './components/Footer';
 
 class App extends React.Component {
 
     render() {
         return(
             <main>
-                <header>
-                    <Header />
-                </header>
-                <section>
-                    <h2>My Projects</h2>
-                    <Slider />
-                </section>
+                <Header />
+                <Slider />
                 <section>
                     <About />
                 </section>
