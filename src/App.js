@@ -11,12 +11,8 @@ class App extends React.Component {
             <main>
                 <Header />
                 <Slider />
-                <section>
-                    <About />
-                </section>
-                <footer>
-                    <Footer />
-                </footer>
+                <About />
+                <Footer />
             </main>
         )
     }

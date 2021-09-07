@@ -11,11 +11,13 @@ class Card extends React.Component {
         }
     }
 
+    //in the future, should probably improve "dangerouslySetInnerHTML" use (below) due to potential security risks
+
     render() {
         return(
             <div className='card'>
                 <h3><a href={this.state.link} target="_blank">{this.state.title}</a></h3>
-                {this.state.description}
+                <p dangerouslySetInnerHTML={{__html: this.state.description}} ></p>
             </div>
         )
     }
