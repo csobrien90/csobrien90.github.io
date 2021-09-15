@@ -9,7 +9,6 @@ class Slider extends React.Component {
         var cards = Array.from(document.getElementsByClassName("card"));
         
         if(cards[cards.length - 1].className === 'card focus') {
-            cards[cards.length - 1].className = 'card';
             return;
         }
 
@@ -25,12 +24,24 @@ class Slider extends React.Component {
             if (cards[i].className === "card focus") {break};
             cards[0].className = 'card focus';
         }
-        
-        
+           
     }
     
     prev = () => {
-        console.log('previous');
+        var cards = Array.from(document.getElementsByClassName("card"));
+        
+        if(cards[0].className === 'card focus') {
+            return;
+        }
+
+        for(let i = 1; i < cards.length; i++) {
+            if (cards[i].className === "card focus") {
+                cards[i].className = 'card';
+                cards[i - 1].className = 'card focus';
+                return;
+            };
+        }
+
     }
     
     render() {
