@@ -2,6 +2,11 @@ import React from 'react';
 import Card from "./Card";
 import cardData from "../cardData";
 
+window.onload = () => {
+    var cards = Array.from(document.getElementsByClassName("card"));
+    cards[0].className = 'card focus';
+}
+
 
 class Slider extends React.Component {
     
@@ -18,13 +23,7 @@ class Slider extends React.Component {
                 cards[i + 1].className = 'card focus';
                 return;
             };
-        }
-
-        for(let i = 0; i < cards.length - 1; i++) {
-            if (cards[i].className === "card focus") {break};
-            cards[0].className = 'card focus';
-        }
-           
+        }           
     }
     
     prev = () => {
