@@ -50,7 +50,7 @@ class Slider extends React.Component {
     
     render() {
         return(
-            <section>
+            <section className="projects">
                 <h2>My Projects</h2>
                 <article id="project-slider">
                     {cardData && cardData.map((card) => {

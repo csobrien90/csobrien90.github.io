@@ -50,9 +50,19 @@ header p {
 
 footer {
   position: absolute;
-  bottom: 20px;
+  bottom: 0;
   width: 100%;
   text-align: center;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 2em;
+  margin: 20px 0;
+}
+
+section {
+  padding: 20px;
 }
 
 #project-slider {
@@ -64,10 +74,21 @@ footer {
 }
 
 .card {
-  width: 30%;
+  width: 31%;
   height: 300px;
   padding: 20px;
   margin: 0 1%;
+  border: 1px solid black;
+  border-radius: 1em;
+  box-shadow: 3px 3px 5px lightgray;
+  transition: left .3s;
+}
+
+/* negate card aesthetic for blank placeholders */
+.card:first-of-type, .card:last-of-type { 
+  border: 1px solid white;
+  border-radius: 1em;
+  box-shadow: 3px 3px 5px white;
 }
 
 .focus, .prev, .next {
@@ -76,13 +97,13 @@ footer {
 }
 
 .focus {
-  left: 32%;
+  left: 33%;
 }
 
 .prev {
-  left: 0;
+  left: 1%;
 }
 
 .next {
-  left: 64%;
+  left: 65%;
 }
