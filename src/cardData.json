@@ -1,5 +1,10 @@
 [
     {
+        "title": "",
+        "link": "",
+        "description": ""
+    },
+    {
         "title": "My Music Page",
         "link": "http://obrientrombone.com",
         "description": "This is my most recent completed project - my landing page as a professional musician. It is a mobile-first, responsive site that uses semantic HTML5, CSS3, JavaScript, and PHP. Since I initially built this site as the final project of my Code Louisville Front End Web Development course, it's packed with fun JS scripts. Feel free to view <a href='https://github.com/csobrien90/obrien-trombone' target='_blank'>the GitHub repo for this site</a> and check out the README for a full list of design features."
@@ -23,5 +28,10 @@
         "title": "JavaScript 30 in 30",
         "link": "https://csobrien90.github.io/javascript-30",
         "description": "This is a website to feature my interpretations of the #JavaScript30 project tutorials by Wes Bos, found on <a href='https://javascript30.com/' target='_blank'>javascript30.com</a>. I've only just started but am really enjoying these bite-sized tasks and learning a lot! Check out the tutorials and feel free to give <a href='https://github.com/csobrien90/javascript-30' target='_blank'>the repo</a> a look as well."
+    },
+    {
+        "title": "",
+        "link": "",
+        "description": ""
     }
 ]
