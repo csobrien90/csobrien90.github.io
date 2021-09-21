@@ -93,6 +93,7 @@ section {
   border-radius: 1em;
   box-shadow: 3px 3px 5px white;
   z-index: -2;
+  display: none;
 }
 
 .focus, .prev, .next {

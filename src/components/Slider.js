@@ -54,7 +54,7 @@ class Slider extends React.Component {
                 <h2>My Projects</h2>
                 <article id="project-slider">
                     {cardData && cardData.map((card) => {
-                        return <Card title={card.title} description={card.description} link={card.link}/>
+                        return <Card title={card.title} description={card.description} link={card.link} key={card.title.replaceAll(' ', '')} />
                     })}
                 </article>
                 <button onClick={this.prev}>Previous</button>
