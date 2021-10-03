@@ -57,8 +57,10 @@ class Slider extends React.Component {
                         return <Card title={card.title} description={card.description} link={card.link} key={card.title.replaceAll(' ', '')} />
                     })}
                 </article>
-                <button onClick={this.prev}>Previous</button>
-                <button onClick={this.next}>Next</button>
+                <article className="buttons">
+                    <button onClick={this.prev}>Previous Project</button>
+                    <button onClick={this.next}>Next Project</button>
+                </article>
             </section>
         )
     }

@@ -3,7 +3,7 @@ import React from 'react';
 class About extends React.Component {
     render() {
         return(
-            <section>
+            <section className="about">
                 <h2>About Me</h2>
                 <p>Chad O'Brien is a freelancer based in Louisville, Kentucky. Among his many interests are performing, teaching, and 
                 writing music, web development, urban farming, and social justice activism. He is currently the Event Coordinator for the 
