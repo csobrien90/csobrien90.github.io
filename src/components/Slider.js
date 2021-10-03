@@ -53,6 +53,7 @@ class Slider extends React.Component {
             <section className="projects">
                 <h2>My Projects</h2>
                 <article id="project-slider">
+                    <div className="slider-cover"></div>
                     {cardData && cardData.map((card) => {
                         return <Card title={card.title} description={card.description} link={card.link} key={card.title.replaceAll(' ', '')} />
                     })}
