@@ -32,11 +32,12 @@ header {
   color: white;
   display: flex;
   align-items: center;
+  flex-direction: column;
 }
 
 h1 {
   flex: 0 0 auto;
-  font-size: 8vw;
+  font-size: 16vw;
   font-weight: lighter;
   font-family: sans-serif;
   letter-spacing: -3px;
@@ -44,7 +45,7 @@ h1 {
 }
 
 header p {
-  font-size: 2vw;
+  font-size: 4vw;
   padding: 0 30px;
   text-align: center;
 }
@@ -60,6 +61,7 @@ footer {
 h2 {
   font-size: 2em;
   margin: 20px 0;
+  text-align: center;
 }
 
 section {
@@ -134,6 +136,12 @@ section {
 
 
 @media screen and (min-width: 650px) {
+  h1 {
+    font-size: 14vw;
+  }
+  header p {
+    font-size: 3vw;
+  }
   .card {
     width: 50%;
   }
@@ -151,6 +159,19 @@ section {
 }
   
 @media screen and (min-width: 1040px) {
+  header {
+    flex-direction: row;
+  }
+  h1 {
+    font-size: 8vw;
+  }
+  
+  header p {
+    font-size: 2vw;
+  }
+  h2 {
+    text-align: left;
+  }
   .card {
     width: 31%;
   }
