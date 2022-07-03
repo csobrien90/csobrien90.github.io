@@ -1,4 +1,5 @@
 import React from 'react';
+import Navigation from './components/Navigation';
 import About from './components/About';
 import Experience from './components/Experience';
 import Interests from './components/Interests';
@@ -9,6 +10,7 @@ class App extends React.Component {
 	render() {
 		return(
 			<main>
+				<Navigation />
 				<About />
 				<Experience />
 				<Interests />

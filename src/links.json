@@ -1,0 +1,18 @@
+[
+	{
+		"displayText": "About",
+		"href": "#about"
+	},
+	{
+		"displayText": "Experience",
+		"href": "#experience"
+	},
+	{
+		"displayText": "Interests",
+		"href": "#interests"
+	},
+	{
+		"displayText": "Connect",
+		"href": "#connect"
+	}
+]
