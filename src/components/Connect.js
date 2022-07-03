@@ -1,4 +1,4 @@
-function Footer() {
+function Connect() {
     let now = new Date();
     let year = now.getFullYear();
     return(
@@ -8,4 +8,4 @@ function Footer() {
     )
 }
 
-export default Footer;
+export default Connect;

@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from "./Card";
-import cardData from "../cardData";
+import cardData from "../cardData.json";
 
 window.onload = () => {
     var cards = Array.from(document.getElementsByClassName("card"));
@@ -8,7 +8,6 @@ window.onload = () => {
     cards[1].className = 'card focus';
     cards[2].className = 'card next';
 }
-
 
 class Slider extends React.Component {
     

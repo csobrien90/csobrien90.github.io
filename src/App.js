@@ -1,21 +1,21 @@
 import React from 'react';
-import Header from './components/Header';
-import Slider from './components/Slider';
 import About from './components/About';
-import Footer from './components/Footer';
+import Experience from './components/Experience';
+import Interests from './components/Interests';
+import Connect from './components/Connect';
 
 class App extends React.Component {
 
-    render() {
-        return(
-            <main>
-                <Header />
-                <Slider />
-                <About />
-                <Footer />
-            </main>
-        )
-    }
+	render() {
+		return(
+			<main>
+				<About />
+				<Experience />
+				<Interests />
+				<Connect />
+			</main>
+		)
+	}
 }
 
 export default App;
