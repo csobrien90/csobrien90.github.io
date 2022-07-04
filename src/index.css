@@ -6,74 +6,126 @@
     margin: 0;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-main {
-  min-height: 100vh;
-  position: relative;
-  overflow: hidden;
-}
-
-header {
-  background-color: gray;
-  padding: 10px;
-  color: white;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+	font-size: 10px;
 }
 
 h1 {
-  flex: 0 0 auto;
-  font-size: 16vw;
-  font-weight: lighter;
-  font-family: sans-serif;
-  letter-spacing: -3px;
-  margin-right: 20px;
+	font-size: 10em;
 }
 
-header p {
-  font-size: 4vw;
-  padding: 0 30px;
-  text-align: center;
+h2 {
+	font-size: 5em;
+}
+
+h3 {
+	font-size: 3em;
+}
+
+p {
+	font-size: 1.6em;
+}
+
+.sr-only {
+	border: 0 !important;
+	clip: rect(1px, 1px, 1px, 1px) !important;
+	-webkit-clip-path: inset(50%) !important;
+	clip-path: inset(50%) !important;
+	height: 1px !important;
+	overflow: hidden !important;
+	margin: -1px !important;
+	padding: 0 !important;
+	position: absolute !important;
+	width: 1px !important;
+	white-space: nowrap !important;
+}
+
+main {
+	position: relative;
+}
+
+nav {
+	position: fixed;
+	top: 0;
+	padding: .5em 0;
+	z-index: 2;
+}
+
+nav a {
+	font-size: 2rem;
+	padding: 0.4em 2em;
+	border-bottom: 2px solid black;
+	position: relative;
+}
+
+nav a:after {
+	bottom: -6px;
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 72px;
+    right: -19px;
+    border-left: 2px solid black;
+    transform: rotate(30deg);
+}
+
+section {
+	min-height: 100vh;
+	padding: 0 3em;
+}
+
+#about {
+	display: grid;
+	grid-template-areas:
+		"pic heading"
+		"pic about"
+		"pic about";
+	align-items: center;
+	justify-items: center;
+	gap: 6em;
+}
+
+#about img {
+	grid-area: pic;
+	max-width: 400px;
+}
+
+#about h1 {
+	grid-area: heading;
+	align-self: flex-end;
+}
+
+#about p {
+	grid-area: about;
+	align-self: flex-start;
+}
+
+#connect {
+	position: relative;
 }
 
 footer {
-  position: relative;
+  position: absolute;
   bottom: 0;
   width: 100%;
   text-align: center;
   padding: 20px;
 }
 
-h2 {
-  font-size: 2em;
-  margin: 20px 0;
-  text-align: center;
-}
-
-section {
-  padding: 20px;
+#topLink {
+	position: fixed;
+	bottom: .5rem;
+	right: 1rem;
+	z-index: 2;
 }
 
 .projects {
-  padding: 0;
-}
-
-.projects h2 {
-  padding: 0 20px;
+	display: grid;
+	grid-template-columns: auto 1fr auto;
 }
 
 #project-slider {
@@ -91,7 +143,7 @@ section {
   position: absolute;
   width: 100%;
   height: 100%;
-  z-index: 10;
+  z-index: 1;
   background-image: linear-gradient(
     to left, 
     rgba(255, 255, 255, 1) 1%, 
@@ -110,7 +162,7 @@ section {
   margin: 0 1%;
   border: 1px solid black;
   border-radius: 1em;
-  box-shadow: 3px 3px 5px lightgray;
+  box-shadow: 0 0 5px rgba(255, 255, 255, .3);
   transition: all .3s;
   display: none;
 }
@@ -159,18 +211,7 @@ section {
   margin: 10px;
 }
 
-.about p {
-  font-size: 1.2em;
-}
-
-
 @media screen and (min-width: 650px) {
-  h1 {
-    font-size: 14vw;
-  }
-  header p {
-    font-size: 3vw;
-  }
   .card {
     width: 50%;
   }
@@ -190,19 +231,6 @@ section {
 @media screen and (min-width: 1040px) {
   .slider-cover{
     background-image: none;
-  }
-  header {
-    flex-direction: row;
-  }
-  h1 {
-    font-size: 8vw;
-  }
-  
-  header p {
-    font-size: 2vw;
-  }
-  h2 {
-    text-align: left;
   }
   .card {
     width: 31%;

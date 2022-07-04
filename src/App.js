@@ -15,6 +15,7 @@ class App extends React.Component {
 				<Experience />
 				<Interests />
 				<Connect />
+				<a href="#top" id='topLink'>Top ↑</a>
 			</main>
 		)
 	}

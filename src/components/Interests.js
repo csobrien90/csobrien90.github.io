@@ -3,8 +3,8 @@ import React from 'react';
 class Interests extends React.Component {
 	render() {
 		return(
-			<section className="interests">
-				<h2>Interests</h2>
+			<section  id="interests">
+				<h2 className='sr-only'>Interests</h2>
 			</section>
 		)
 	}

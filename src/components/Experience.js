@@ -4,7 +4,8 @@ import Slider from './Slider';
 class Experience extends React.Component {
     render() {
         return(
-            <section className="about">
+            <section  id="experience">
+				<h2 className='sr-only'>Experience</h2>
 				<Slider />
             </section>
         )
