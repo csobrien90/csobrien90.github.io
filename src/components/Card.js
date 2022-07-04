@@ -16,7 +16,7 @@ class Card extends React.Component {
     render() {
         return(
             <div className='card'>
-                <h3><a href={this.state.link} target="_blank">{this.state.title}</a></h3>
+                <h4><a href={this.state.link} target="_blank">{this.state.title}</a></h4>
                 <p dangerouslySetInnerHTML={{__html: this.state.description}} ></p>
             </div>
         )

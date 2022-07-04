@@ -50,6 +50,7 @@ class Slider extends React.Component {
 	render() {
 		return(
 			<div className="projects">
+				<h3>Projects</h3>
 				<button onClick={this.prev}>Previous Project</button>
 				<article id="project-slider">
 					<div className="slider-cover"></div>

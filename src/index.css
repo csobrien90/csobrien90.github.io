@@ -35,6 +35,10 @@ h3 {
 	font-size: 3em;
 }
 
+h4 {
+	font-size: 2em;
+}
+
 p {
 	font-size: 1.6em;
 }
@@ -233,6 +237,12 @@ footer {
 	grid-template-columns: auto 1fr auto;
 }
 
+.projects h3 {
+	grid-column: span 3;
+	align-self: center;
+	justify-self: center;
+}
+
 #project-slider {
   display: flex;
   flex-wrap: wrap;
@@ -301,7 +311,7 @@ footer {
   z-index: -1;
 }
 
-.card h3 {
+.card h4 {
   text-align: center;
   margin-bottom: 10px;
 }
