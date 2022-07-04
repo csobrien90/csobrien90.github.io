@@ -12,7 +12,7 @@ class SocialMediaLinks extends React.Component {
 				<a href='https://www.facebook.com/chad.s.obrien' target='_blank' title='Facebook'><img src={facebookIcon} alt="facebook logo" className='socialMediaIcon' /></a>
 			</nav>
 		)
-    }
+	}
 }
 
 export default SocialMediaLinks;

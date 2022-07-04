@@ -1,7 +1,7 @@
 import React from 'react';
 
 class ContactForm extends React.Component {
-	
+
 	sendMessage = (e) => {
 		e.preventDefault();
 		// Get and sanitize user input
@@ -9,7 +9,7 @@ class ContactForm extends React.Component {
 		// Alert user whether email was sent successfully
 		alert('Sorry - this contact form is not yet functioning! While I am working on it, feel free to contact me using the form found at obrientrombone.com/connect.html');
 	}
-    
+
 	render() {
 		return(
 			<form className='contactForm'>
@@ -36,7 +36,7 @@ class ContactForm extends React.Component {
 				<button id="contactFormSubmit" onClick={this.sendMessage}>Send Message</button>
 			</form>
 		)
-    }
+	}
 }
 
 export default ContactForm;

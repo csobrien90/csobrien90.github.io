@@ -4,7 +4,7 @@ import SocialMediaLinks from './SocialMediaLinks';
 
 class Connect extends React.Component {
 	render() {
-        let now = new Date();
+		let now = new Date();
 		let year = now.getFullYear();
 		return(
 			<section id="connect">
@@ -19,7 +19,7 @@ class Connect extends React.Component {
 				</footer>
 			</section>
 		)
-    }
+	}
 }
 
 export default Connect;

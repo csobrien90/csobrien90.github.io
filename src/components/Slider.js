@@ -25,9 +25,9 @@ class Slider extends React.Component {
 				cards[i + 2].className = 'card next';
 				return;
 			};
-		}           
+		}
 	}
-	
+
 	prev = () => {
 		var cards = Array.from(document.getElementsByClassName("card"));
 		
@@ -44,9 +44,8 @@ class Slider extends React.Component {
 				return;
 			};
 		}
-
 	}
-	
+
 	render() {
 		return(
 			<div className="projects">
