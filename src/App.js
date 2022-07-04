@@ -6,9 +6,8 @@ import Interests from './components/Interests';
 import Connect from './components/Connect';
 
 class App extends React.Component {
-
 	render() {
-		return(
+		return (
 			<main>
 				<Navigation />
 				<About />
