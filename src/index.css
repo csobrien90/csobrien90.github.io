@@ -86,6 +86,7 @@ main {
 section {
 	min-height: 100vh;
 	padding: 7em 3em 2em;
+	box-shadow: 0 0 5px rgba(0, 0, 0, .5);
 }
 
 #about {
@@ -151,10 +152,55 @@ section {
 #connect {
 	background-color: var(--red-orange);
 	position: relative;
+	display: grid;
+	grid-template-areas: 
+		"contactForm connectText"
+		"contactForm socialMediaLinks";
+	grid-template-columns: 1fr 1fr;
+	gap: 4em;
+	align-items: center;
+}
+
+.contactForm {
+	grid-area: contactForm;
+	display: grid;
+	padding: 2em;
+	background-color: rgba(255, 255, 255, .3);
+	justify-self: center;
+}
+
+.connectText {
+	grid-area: connectText;
+	align-self: flex-end;
+	background-color: rgba(255, 255, 255, .3);
+}
+
+.socialMediaLinks {
+	grid-area: socialMediaLinks;
+	align-self: flex-start;
+	display: grid;
+	grid-template-columns: repeat(3, 100px);
+	justify-items: center;
+	justify-content: center;
+	grid: 2em;
+	background-color: rgba(255, 255, 255, .3);
+}
+
+.socialMediaLinks a {
+	border-radius: 50%;
+	padding: 2em;
+}
+
+.socialMediaLinks a[title="Facebook"] {--socialHover: #4267B2}
+.socialMediaLinks a[title="Instagram"] {--socialHover: #E1306C}
+.socialMediaLinks a[title="LinkedIn"] {--socialHover: #0a66c3}
+
+.socialMediaLinks a:hover, .socialMediaLinks a:focus {
+	background-color: var(--socialHover);
 }
 
 .socialMediaIcon {
-	max-width: 4.4em;
+	max-width: 4em;
 }
 
 footer {
