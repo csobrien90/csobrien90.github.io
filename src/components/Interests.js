@@ -8,7 +8,7 @@ class Interests extends React.Component {
 			<section  id="interests">
 				<h2 className='sr-only'>Interests</h2>
 				{interests.map((interest, index) => {
-					return <InterestCard title={interest.title} key={index} />
+					return <InterestCard title={interest.title} description={interest.description} link={interest.link} key={index} />
 				})}
 			</section>
 		)

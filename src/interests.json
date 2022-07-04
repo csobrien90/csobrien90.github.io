@@ -1,8 +1,17 @@
 [
 	{
-		"title": "Music"
+		"title": "Music",
+		"description": "",
+		"link": "https://obrientrombone.com"
 	},
 	{
-		"title": "Activism"
+		"title": "Louisville Jazz Initiative",
+		"description": "",
+		"link": "https://louisvillejazzinitiative.com"
+	},
+	{
+		"title": "Kitty With a Cupcake",
+		"description": "",
+		"link": "https://kittywithacupcake.com"
 	}
 ]
