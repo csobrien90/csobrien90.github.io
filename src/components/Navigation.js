@@ -32,7 +32,7 @@ class Navigation extends React.Component {
 
 	render() {
 		return(
-			<nav>
+			<nav className='pageNav'>
 				{
 					links && links.map((link, index) => {
 						const activeClass = this.state.activeLink === link.displayText.toLowerCase() ? 'active' : '';

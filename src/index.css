@@ -58,7 +58,7 @@ main {
 	overflow-x: hidden;
 }
 
-nav {
+.pageNav {
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -68,7 +68,7 @@ nav {
 	min-width: 60%;
 }
 
-nav a {
+.pageNav a {
 	font-size: 2rem;
 	padding: .4em 1.5em;
 	border-bottom: 2px solid var(--black);
@@ -78,7 +78,7 @@ nav a {
 	color: var(--black)
 }
 
-nav a:hover, .active {
+.pageNav a:hover, .active {
 	background-color: rgba(255, 255, 255, .8);
 	font-weight: bold;
 }
@@ -151,6 +151,10 @@ section {
 #connect {
 	background-color: var(--red-orange);
 	position: relative;
+}
+
+.socialMediaIcon {
+	max-width: 4.4em;
 }
 
 footer {
