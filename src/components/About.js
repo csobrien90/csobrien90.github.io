@@ -12,7 +12,7 @@ class About extends React.Component {
 				<div className='imgWrapper'>
 					<img src={headshot} alt="a headshot of Chad O'Brien dressed in a suit"></img>
 					<div className='imgBorderWrapper'>
-						{divArr.map(boxNum => <div className='imgBorderBox'></div>)}
+						{divArr.map(boxNum => <div className='imgBorderBox' key={boxNum}></div>)}
 					</div>
 				</div>
 				<h1>Chad O'Brien</h1>
