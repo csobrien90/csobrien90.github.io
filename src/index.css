@@ -147,10 +147,32 @@ section {
 
 #experience {
 	background-color: var(--blue);
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+#experience .projects {
+	grid-column: span 2;
+}
+
+#experience h3 {
+	text-align: center;
 }
 
 #interests {
 	background-color: var(--yellow);
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(20em, 40em));
+	gap: 2em;
+	justify-content: space-around;
+}
+
+.interestCard {
+	background-color: rgba(255, 255, 255, .3);
+}
+
+.interestCard h3 {
+	text-align: center;
 }
 
 #connect {
