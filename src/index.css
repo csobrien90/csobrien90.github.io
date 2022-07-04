@@ -1,3 +1,9 @@
+/*
+__________________
+Imports and Variables
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Antic&display=swap');
 
 :root {
@@ -7,7 +13,17 @@
 	--red-orange: #f05741;
 	--blue: #0089b8;
 	--yellow: #ddaf4a;
+	--boxBackground: rgba(255, 255, 255, .3);
+
+	--shadow: 0 0 5px rgba(0, 0, 0, .5);
+	--highlight: 0 0 5px var(--boxBackground);
 }
+
+/*
+__________________
+Default styles
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+*/
 
 * {
 	box-sizing: border-box;
@@ -28,19 +44,23 @@ h1 {
 }
 
 h2 {
-	font-size: 5em;
+	font-size: 6em;
 }
 
 h3 {
-	font-size: 3em;
+	font-size: 4em;
 }
 
 h4 {
-	font-size: 2em;
+	font-size: 3em;
 }
 
 p {
-	font-size: 1.6em;
+	font-size: 2.5em;
+}
+
+ul {
+	list-style-type: none;
 }
 
 .sr-only {
@@ -62,6 +82,24 @@ main {
 	overflow-x: hidden;
 }
 
+section {
+	min-height: 100vh;
+	padding: 7em 3em 2em;
+	box-shadow: var(--shadow);
+}
+
+.backgroundBox {
+	background-color: var(--boxBackground);
+	padding: 2em;
+	border-radius: .5em;
+	box-shadow: 0 0 4px rgba(0, 0, 0, .1);
+}
+
+/*
+__________________
+Navigation
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+*/
 .pageNav {
 	position: fixed;
 	top: 0;
@@ -77,21 +115,39 @@ main {
 	padding: .4em 1.5em;
 	border-bottom: 2px solid var(--black);
 	position: relative;
-	background-color: rgba(255, 255, 255, .3);
+	background-color: var(--boxBackground);
 	text-decoration: none;
 	color: var(--black)
 }
 
-.pageNav a:hover, .active {
+.pageNav a:hover, a.active {
+	font-weight: bold;
+	background-color: rgba(255, 255, 255, .8);
+	box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+}
+
+#topLink {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	z-index: 2;
+	padding: .5em 1em;
+	font-size: 1.5em;
+	background-color: rgba(255, 255, 255, .5);
+	text-decoration: none;
+	color: var(--black)
+}
+
+#topLink:hover {
 	background-color: rgba(255, 255, 255, .8);
 	font-weight: bold;
 }
 
-section {
-	min-height: 100vh;
-	padding: 7em 3em 2em;
-	box-shadow: 0 0 5px rgba(0, 0, 0, .5);
-}
+/*
+__________________
+About
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+*/
 
 #about {
 	display: grid;
@@ -110,7 +166,7 @@ section {
 }
 
 #about img {
-	max-width: 400px;
+	max-width: 600px;
 	margin: 4em;
 }
 
@@ -145,6 +201,12 @@ section {
 	align-self: flex-start;
 }
 
+/*
+__________________
+Experience
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+*/
+
 #experience {
 	background-color: var(--blue);
 	display: grid;
@@ -157,101 +219,6 @@ section {
 
 #experience h3 {
 	text-align: center;
-}
-
-#interests {
-	background-color: var(--yellow);
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(20em, 40em));
-	gap: 2em;
-	justify-content: space-around;
-}
-
-.interestCard {
-	background-color: rgba(255, 255, 255, .3);
-}
-
-.interestCard h3 {
-	text-align: center;
-}
-
-#connect {
-	background-color: var(--red-orange);
-	position: relative;
-	display: grid;
-	grid-template-areas: 
-		"contactForm connectText"
-		"contactForm socialMediaLinks";
-	grid-template-columns: 1fr 1fr;
-	gap: 4em;
-	align-items: center;
-}
-
-.contactForm {
-	grid-area: contactForm;
-	display: grid;
-	padding: 2em;
-	background-color: rgba(255, 255, 255, .3);
-	justify-self: center;
-}
-
-.connectText {
-	grid-area: connectText;
-	align-self: flex-end;
-	background-color: rgba(255, 255, 255, .3);
-}
-
-.socialMediaLinks {
-	grid-area: socialMediaLinks;
-	align-self: flex-start;
-	display: grid;
-	grid-template-columns: repeat(3, 100px);
-	justify-items: center;
-	justify-content: center;
-	grid: 2em;
-	background-color: rgba(255, 255, 255, .3);
-}
-
-.socialMediaLinks a {
-	border-radius: 50%;
-	padding: 2em;
-}
-
-.socialMediaLinks a[title="Facebook"] {--socialHover: #4267B2}
-.socialMediaLinks a[title="Instagram"] {--socialHover: #E1306C}
-.socialMediaLinks a[title="LinkedIn"] {--socialHover: #0a66c3}
-
-.socialMediaLinks a:hover, .socialMediaLinks a:focus {
-	background-color: var(--socialHover);
-}
-
-.socialMediaIcon {
-	max-width: 4em;
-}
-
-footer {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	text-align: center;
-	padding: 20px;
-}
-
-#topLink {
-	position: fixed;
-	bottom: 0;
-	right: 0;
-	z-index: 2;
-	padding: .5em 1em;
-	font-size: 1.5em;
-	background-color: rgba(255, 255, 255, .5);
-	text-decoration: none;
-	color: var(--black)
-}
-
-#topLink:hover {
-	background-color: rgba(255, 255, 255, .8);
-	font-weight: bold;
 }
 
 .projects {
@@ -299,7 +266,7 @@ footer {
 	margin: 0 1%;
 	border: 1px solid var(--black);
 	border-radius: 1em;
-	box-shadow: 0 0 5px rgba(255, 255, 255, .3);
+	box-shadow: var(--highlight);
 	transition: all .3s;
 	display: none;
 }
@@ -338,15 +305,93 @@ footer {
 	margin-bottom: 10px;
 }
 
-.buttons {
-	width: fit-content;
-	margin: 0 auto;
+/*
+__________________
+Interests
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+*/
+
+#interests {
+	background-color: var(--yellow);
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(20em, 40em));
+	gap: 2em;
+	justify-content: space-around;
 }
 
-.buttons button {
-	padding: 10px;
-	margin: 10px;
+.interestCard h3 {
+	text-align: center;
 }
+
+/*
+__________________
+Connect
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+*/
+
+#connect {
+	background-color: var(--red-orange);
+	position: relative;
+	display: grid;
+	grid-template-areas: 
+		"contactForm connectText"
+		"contactForm socialMediaLinks";
+	grid-template-columns: 1fr 1fr;
+	gap: 4em;
+	align-items: center;
+}
+
+.contactForm {
+	grid-area: contactForm;
+	display: grid;
+	justify-self: center;
+}
+
+.connectText {
+	grid-area: connectText;
+	align-self: flex-end;
+}
+
+.socialMediaLinks {
+	grid-area: socialMediaLinks;
+	align-self: flex-start;
+	display: grid;
+	grid-template-columns: repeat(3, 100px);
+	justify-items: center;
+	justify-content: center;
+	grid: 2em;
+}
+
+.socialMediaLinks a {
+	border-radius: 50%;
+	padding: 2em;
+}
+
+.socialMediaLinks a[title="Facebook"] {--socialHover: #4267B2}
+.socialMediaLinks a[title="Instagram"] {--socialHover: #E1306C}
+.socialMediaLinks a[title="LinkedIn"] {--socialHover: #0a66c3}
+
+.socialMediaLinks a:hover, .socialMediaLinks a:focus {
+	background-color: var(--socialHover);
+}
+
+.socialMediaIcon {
+	max-width: 4em;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	padding: 20px;
+}
+
+/*
+__________________
+Media queries
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+*/
 
 @media screen and (min-width: 650px) {
 	.card {

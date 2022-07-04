@@ -9,7 +9,7 @@ class Connect extends React.Component {
 		return(
 			<section id="connect">
 				<h2 className='sr-only'>Connect</h2>
-				<p className='connectText'>Whether you have questions, comments, requests, or just want to chat, I'd love to hear from you! 
+				<p className='connectText backgroundBox'>Whether you have questions, comments, requests, or just want to chat, I'd love to hear from you! 
 					Use this contact form to email me or connect with me on social media.
 				</p>
 				<ContactForm />

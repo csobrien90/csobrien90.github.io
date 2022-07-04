@@ -12,7 +12,7 @@ class ContactForm extends React.Component {
 
 	render() {
 		return(
-			<form className='contactForm'>
+			<form className='contactForm backgroundBox'>
 				<label htmlFor="name">
 					Name:
 					<br></br>
