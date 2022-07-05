@@ -85,17 +85,17 @@ main {
 
 section {
 	min-height: 100vh;
-	padding: 9em 5em;
+	padding: 9em 7em;
 	box-shadow: var(--shadow);
 }
 
-.backgroundBox {
+.backgroundBox, .focus, .prev, .next {
 	background-color: var(--boxBackground);
 	padding: 2em;
 	border-radius: .3em;
 	box-shadow: var(--lt-shadow);
 	height: 100%;
-	width: 90%;
+	width: 100%;
 }
 
 /*
@@ -214,6 +214,7 @@ Experience
 	background-color: var(--blue);
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	gap: 3em;
 }
 
 #experience .projects {
@@ -246,47 +247,22 @@ Experience
 	position: relative;
 }
 
-.slider-cover {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	z-index: 1;
-	background-image: linear-gradient(
-		to left, 
-		rgba(255, 255, 255, 1) 1%, 
-		rgba(255, 255, 255, .5) 4%,
-		rgba(255, 255, 255, 0) 8%, 
-		rgba(255, 255, 255, 0) 92%,
-		rgba(255, 255, 255, .5) 96%, 
-		rgba(255, 255, 255, 1) 99%
-	);
-}
-
 .card {
 	width: 76%;
 	height: 300px;
 	padding: 20px;
 	margin: 0 1%;
-	border: 1px solid var(--black);
-	border-radius: 1em;
-	box-shadow: var(--highlight);
+	box-shadow: var(--lt-shadow);
 	transition: all .3s;
 	display: none;
-}
-
-/* negate card aesthetic for blank placeholders */
-.card:nth-of-type(2), .card:last-of-type { 
-	border: 1px solid white;
-	border-radius: 1em;
-	box-shadow: 3px 3px 5px white;
-	z-index: -2;
-	display: none;
+	align-items: center;
+	justify-items: center;
+	overflow: auto;
 }
 
 .focus, .prev, .next {
-	background-color: white;
 	position: absolute;
-	display: unset;
+	display: grid;
 }
 
 .focus {
@@ -300,12 +276,15 @@ Experience
 
 .next {
 	left: 88%;
-	z-index: -1;
 }
 
 .card h4 {
 	text-align: center;
-	margin-bottom: 10px;
+}
+
+/* first-of-type not working? */
+.card:nth-of-type(20n - 18) h4 {
+	font-size: 6em;
 }
 
 /*

@@ -6,7 +6,8 @@ class Card extends React.Component {
 		super(props);
 		this.state = {
 			title: props.title,
-			link: props.link,
+			githubLink: props.githubLink,
+			prodLink: props.prodLink,
 			description: props.description
 		}
 	}
@@ -16,8 +17,10 @@ class Card extends React.Component {
 	render() {
 		return(
 			<div className='card'>
-				<h4><a href={this.state.link} target="_blank">{this.state.title}</a></h4>
-				<p dangerouslySetInnerHTML={{__html: this.state.description}} ></p>
+				<h4>{this.state.title}</h4>
+				{this.state.description && <p dangerouslySetInnerHTML={{__html: this.state.description}} ></p>}
+				{this.state.githubLink && <a href={this.state.githubLink} target="_blank">GitHub</a>}
+				{this.state.prodLink && <a href={this.state.prodLink} target="_blank">Application</a>}
 			</div>
 		)
 	}

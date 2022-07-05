@@ -4,7 +4,7 @@ import skills from '../skills.json';
 class Skills extends React.Component {
 	render() {
 		return(
-			<article className='skills'>
+			<article className='skills backgroundBox'>
 				<h3>Skills</h3>
 				<ul>
 					{skills.map((skill, index) => {

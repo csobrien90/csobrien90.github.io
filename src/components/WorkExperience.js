@@ -4,8 +4,9 @@ import workExperience from '../workExperience.json';
 class WorkExperience extends React.Component {
 	render() {
 		return(
-			<article className='workExperience'>
+			<article className='workExperience backgroundBox'>
 				<h3>Work Experience</h3>
+				<ul>
 				{
 					workExperience.map((job, index) => {
 						return <li key={index}>
@@ -16,6 +17,7 @@ class WorkExperience extends React.Component {
 						</li>
 					})
 				}
+				</ul>
 			</article>
 		)
 	}
