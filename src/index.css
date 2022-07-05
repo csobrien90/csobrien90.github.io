@@ -13,9 +13,10 @@ Imports and Variables
 	--red-orange: #f05741;
 	--blue: #0089b8;
 	--yellow: #ddaf4a;
-	--boxBackground: rgba(255, 255, 255, .3);
+	--boxBackground: rgba(255, 255, 255, .2);
 
 	--shadow: 0 0 5px rgba(0, 0, 0, .5);
+	--lt-shadow: 0 0 4px rgba(0, 0, 0, .3);
 	--highlight: 0 0 5px var(--boxBackground);
 }
 
@@ -84,16 +85,16 @@ main {
 
 section {
 	min-height: 100vh;
-	padding: 8em 5em;
+	padding: 9em 5em;
 	box-shadow: var(--shadow);
 }
 
 .backgroundBox {
 	background-color: var(--boxBackground);
 	padding: 2em;
-	border-radius: .5em;
-	box-shadow: 0 0 4px rgba(0, 0, 0, .1);
-	height: 90%;
+	border-radius: .3em;
+	box-shadow: var(--lt-shadow);
+	height: 100%;
 	width: 90%;
 }
 
@@ -346,10 +347,15 @@ Connect
 .contactForm {
 	grid-area: contactForm;
 	display: grid;
-	grid-template-rows: auto auto auto 1fr auto;
+	grid-template-rows: auto auto auto 24em auto;
 	justify-self: center; 
-	gap: 2em;
+	gap: 1em;
 	padding: 2em 4em;
+	min-height: fit-content;
+}
+
+.contactForm label:last-of-type {
+	min-height: 12em;
 }
 
 .contactForm input {
@@ -361,16 +367,30 @@ Connect
 }
 
 .contactForm textarea {
-	height: 80%;
+	height: 200px;
 	width: 100%;
-	margin: .5em 0 0;
+	margin: .3em 0 0;
 	font-size: 1em;
 	padding: .5em;
 }
 
 #contactFormSubmit {
-	padding: 1em;
+	padding: .5em;
+	margin-top: 1em;
 	width: 50%;
+	font-size: 2.4em;
+	font-weight: bold;
+	border: none;
+	background-color: var(--blue);
+	color: white;
+	border-radius: .3em;
+	box-shadow: var(--lt-shadow);
+}
+
+#contactFormSubmit:hover, #contactFormSubmit:focus {
+	cursor: pointer;
+	background-color: #007097;
+	box-shadow: var(--shadow);
 }
 
 .connectText {
