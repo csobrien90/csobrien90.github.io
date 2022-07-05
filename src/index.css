@@ -55,7 +55,7 @@ h4 {
 	font-size: 3em;
 }
 
-p {
+p, label {
 	font-size: 2.5em;
 }
 
@@ -84,7 +84,7 @@ main {
 
 section {
 	min-height: 100vh;
-	padding: 7em 3em 2em;
+	padding: 8em 5em;
 	box-shadow: var(--shadow);
 }
 
@@ -93,6 +93,8 @@ section {
 	padding: 2em;
 	border-radius: .5em;
 	box-shadow: 0 0 4px rgba(0, 0, 0, .1);
+	height: 90%;
+	width: 90%;
 }
 
 /*
@@ -344,7 +346,31 @@ Connect
 .contactForm {
 	grid-area: contactForm;
 	display: grid;
-	justify-self: center;
+	grid-template-rows: auto auto auto 1fr auto;
+	justify-self: center; 
+	gap: 2em;
+	padding: 2em 4em;
+}
+
+.contactForm input {
+	line-height: 1.6;
+	width: 50%;
+	font-size: 1em;
+	margin-top: .2em;
+	padding: 0 .5em;
+}
+
+.contactForm textarea {
+	height: 80%;
+	width: 100%;
+	margin: .5em 0 0;
+	font-size: 1em;
+	padding: .5em;
+}
+
+#contactFormSubmit {
+	padding: 1em;
+	width: 50%;
 }
 
 .connectText {
@@ -357,6 +383,7 @@ Connect
 	align-self: flex-start;
 	display: grid;
 	grid-template-columns: repeat(3, 100px);
+	align-items: center;
 	justify-items: center;
 	justify-content: center;
 	grid: 2em;
@@ -384,7 +411,7 @@ footer {
 	bottom: 0;
 	width: 100%;
 	text-align: center;
-	padding: 20px;
+	padding: 2em;
 }
 
 /*
