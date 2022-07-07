@@ -8,7 +8,7 @@ class Skills extends React.Component {
 				<h3>Skills</h3>
 				<ul>
 					{skills.map((skill, index) => {
-						return <li key={index}><p>{skill}</p></li>
+						return <li key={index}><img src={skill.imageSrc} alt={skill.imageAlt}></img><p>{skill.text}</p></li>
 					})}
 				</ul>
 			</article>

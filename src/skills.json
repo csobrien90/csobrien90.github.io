@@ -1,14 +1,62 @@
 [
-	"Fast learner",
-	"Attention to detail",
-	"Teamwork and communication",
-	"Strong aesthetic sense",
-	"HTML5",
-	"CSS3",
-	"JavaScript, jQuery",
-	"React, Node",
-	"WCAG 2.2",
-	"Adobe Creative Suite",
-	"Git and GitHub",
-	"Visual Studio Code"
+	{
+		"text": "Fast learner",
+		"imageSrc": "",
+		"imageAlt": ""
+	},
+	{
+		"text": "Attention to detail",
+		"imageSrc": "",
+		"imageAlt": ""
+	},
+	{
+		"text": "Teamwork and communication",
+		"imageSrc": "",
+		"imageAlt": ""
+	},
+	{
+		"text": "Strong aesthetic sense",
+		"imageSrc": "",
+		"imageAlt": ""
+	},
+	{
+		"text": "HTML5",
+		"imageSrc": "",
+		"imageAlt": ""
+	},
+	{
+		"text": "CSS3",
+		"imageSrc": "",
+		"imageAlt": ""
+	},
+	{
+		"text": "JavaScript, jQuery",
+		"imageSrc": "",
+		"imageAlt": ""
+	},
+	{
+		"text": "React, Node",
+		"imageSrc": "",
+		"imageAlt": ""
+	},
+	{
+		"text": "WCAG 2.2",
+		"imageSrc": "",
+		"imageAlt": ""
+	},
+	{
+		"text": "Adobe Creative Suite",
+		"imageSrc": "",
+		"imageAlt": ""
+	},
+	{
+		"text": "Git and GitHub",
+		"imageSrc": "",
+		"imageAlt": ""
+	},
+	{
+		"text": "Visual Studio Code",
+		"imageSrc": "",
+		"imageAlt": ""
+	}
 ]
