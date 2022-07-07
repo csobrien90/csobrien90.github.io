@@ -5,7 +5,7 @@ class WorkExperience extends React.Component {
 	render() {
 		return(
 			<article className='workExperience backgroundBox'>
-				<h3>Work Experience</h3>
+				<h3>Dev Experience</h3>
 				<ul>
 				{
 					workExperience.map((job, index) => {

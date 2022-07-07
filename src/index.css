@@ -158,7 +158,7 @@ About
 		"pic heading"
 		"pic about";
 	align-items: center;
-	gap: 6em;
+	gap: 6em 12em;
 	background-color: var(--black);
 	color: white;
 }
@@ -202,6 +202,7 @@ About
 #about p {
 	grid-area: about;
 	align-self: flex-start;
+	padding-right: 3em;
 }
 
 /*
@@ -230,17 +231,48 @@ Experience
 	grid-template-columns: auto 1fr auto;
 }
 
-.projects h3 {
-	grid-column: span 3;
+.projects button {
 	align-self: center;
-	justify-self: center;
+	background-color: transparent;
+	border-radius: 50%;
+	padding: 2em;
+	display: grid;
+	align-items: center;
+	justify-items: center;
+}
+
+.projects button:hover {
+	border-color: white;
+	cursor: pointer;
+}
+
+.projects button:hover i {
+	border-color: white;
+}
+
+
+.arrow {
+	border: solid black;
+	border-width: 0 8px 8px 0;
+	display: inline-block;
+	padding: 8px;
+}
+
+.right {
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+}
+
+.left {
+	transform: rotate(135deg);
+	-webkit-transform: rotate(135deg);
 }
 
 #project-slider {
 	display: flex;
 	flex-wrap: wrap;
 	overflow: hidden;
-	height: 400px;
+	height: 500px;
 	width: 100%;
 	margin: 20px 0;
 	align-items: center;
@@ -249,15 +281,15 @@ Experience
 
 .card {
 	width: 76%;
-	height: 300px;
 	padding: 20px;
 	margin: 0 1%;
-	box-shadow: var(--lt-shadow);
 	transition: all .3s;
 	display: none;
 	align-items: center;
 	justify-items: center;
 	overflow: auto;
+	background-color: #33a1c6;
+	box-shadow: none;
 }
 
 .focus, .prev, .next {
@@ -267,7 +299,7 @@ Experience
 
 .focus {
 	left: 10%;
-	height: 400px;
+	box-shadow: var(--lt-shadow);
 }
 
 .prev {
@@ -276,14 +308,19 @@ Experience
 
 .next {
 	left: 88%;
+	box-shadow: var(--lt-shadow);
 }
 
 .card h4 {
 	text-align: center;
 }
 
-/* first-of-type not working? */
-.card:nth-of-type(20n - 18) h4 {
+.card:nth-of-type(1) {
+	z-index: 3;
+	box-shadow: var(--lt-shadow);
+}
+
+.card:nth-of-type(1) h4 {
 	font-size: 6em;
 }
 
@@ -296,9 +333,21 @@ Interests
 #interests {
 	background-color: var(--yellow);
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(20em, 40em));
-	gap: 2em;
+	grid-template-columns: repeat(auto-fill, minmax(40em, 1fr));
+	gap: 3em;
 	justify-content: space-around;
+}
+
+.interestCard {
+	height: 50em;
+}
+
+.interestCard:first-of-type, .interestCard:last-of-type {
+	grid-column: span 3;
+}
+
+.interestCard:nth-of-type(5) {
+	grid-column: span 2;
 }
 
 .interestCard h3 {

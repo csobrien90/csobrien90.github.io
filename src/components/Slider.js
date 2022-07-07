@@ -49,13 +49,13 @@ class Slider extends React.Component {
 	render() {
 		return(
 			<div className="projects">
-				<button onClick={this.prev}>Previous Project</button>
+				<button onClick={this.prev} title="Previous project"><i className='arrow left'></i></button>
 				<article id="project-slider">
 					{cardData && cardData.map((card, index) => {
 						return <Card title={card.title} description={card.description} githubLink={card.githubLink} prodLink={card.prodLink} key={index} />
 					})}
 				</article>
-				<button onClick={this.next}>Next Project</button>
+				<button onClick={this.next} title="Next project"><i className='arrow right'></i></button>
 			</div>
 		)
 	}

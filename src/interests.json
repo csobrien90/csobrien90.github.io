@@ -2,16 +2,50 @@
 	{
 		"title": "Music",
 		"description": "",
+		"imageSrc": "",
+		"imageAlt": "",
 		"link": "https://obrientrombone.com"
 	},
 	{
 		"title": "Louisville Jazz Initiative",
 		"description": "",
+		"imageSrc": "",
+		"imageAlt": "",
 		"link": "https://louisvillejazzinitiative.com"
+	},
+	{
+		"title": "Code Louisville",
+		"description": "",
+		"imageSrc": "",
+		"imageAlt": "",
+		"link": "https://codelouisville.org"
+	},
+	{
+		"title": "Urban Farming",
+		"description": "",
+		"imageSrc": "",
+		"imageAlt": "",
+		"link": "https://louisvillegrows.org/"
+	},
+	{
+		"title": "Mutual Aid Organizations",
+		"description": "",
+		"imageSrc": "",
+		"imageAlt": "",
+		"link": "https://louisvillecommunitygrocery.com/"
+	},
+	{
+		"title": "Placeholder title",
+		"description": "",
+		"imageSrc": "",
+		"imageAlt": "",
+		"link": ""
 	},
 	{
 		"title": "Kitty With a Cupcake",
 		"description": "",
+		"imageSrc": "",
+		"imageAlt": "",
 		"link": "https://kittywithacupcake.com"
 	}
 ]
