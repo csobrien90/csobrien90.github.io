@@ -1,62 +1,82 @@
 [
 	{
 		"text": "Fast learner",
-		"imageSrc": "",
+		"imageSrc": "./skills/FastLearner_badge.png",
 		"imageAlt": ""
 	},
 	{
-		"text": "Attention to detail",
-		"imageSrc": "",
+		"text": "Detail oriented",
+		"imageSrc": "./skills/Detail_badge.png",
 		"imageAlt": ""
 	},
 	{
-		"text": "Teamwork and communication",
-		"imageSrc": "",
+		"text": "Communication",
+		"imageSrc": "./skills/Teamwork_badge.png",
 		"imageAlt": ""
 	},
 	{
-		"text": "Strong aesthetic sense",
-		"imageSrc": "",
+		"text": "Aesthetic sense",
+		"imageSrc": "./skills/Aesthetic_badge.png",
 		"imageAlt": ""
 	},
 	{
 		"text": "HTML5",
-		"imageSrc": "",
+		"imageSrc": "./skills/HTML5_badge.png",
 		"imageAlt": ""
 	},
 	{
 		"text": "CSS3",
-		"imageSrc": "",
+		"imageSrc": "./skills/CSS3_badge.png",
 		"imageAlt": ""
 	},
 	{
 		"text": "JavaScript, jQuery",
-		"imageSrc": "",
+		"imageSrc": "./skills/JS_badge.png",
 		"imageAlt": ""
 	},
 	{
-		"text": "React, Node",
-		"imageSrc": "",
+		"text": "PHP",
+		"imageSrc": "./skills/PHP_badge.png",
+		"imageAlt": ""
+	},
+	{
+		"text": "React",
+		"imageSrc": "./skills/React_badge.png",
+		"imageAlt": ""
+	},
+	{
+		"text": "Node",
+		"imageSrc": "./skills/Node_badge.png",
+		"imageAlt": ""
+	},
+	{
+		"text": "UX/UI Design",
+		"imageSrc": "./skills/UxUi_badge.png",
+		"imageAlt": ""
+	},
+	{
+		"text": "Git, Github, Bitbucket",
+		"imageSrc": "./skills/Git_badge.png",
 		"imageAlt": ""
 	},
 	{
 		"text": "WCAG 2.2",
-		"imageSrc": "",
+		"imageSrc": "./skills/WCAG_badge.png",
 		"imageAlt": ""
 	},
 	{
 		"text": "Adobe Creative Suite",
-		"imageSrc": "",
+		"imageSrc": "./skills/Adobe_badge.png",
 		"imageAlt": ""
 	},
 	{
-		"text": "Git and GitHub",
-		"imageSrc": "",
+		"text": "WordPress, WooCommerce",
+		"imageSrc": "./skills/WordPress_badge.png",
 		"imageAlt": ""
 	},
 	{
-		"text": "Visual Studio Code",
-		"imageSrc": "",
+		"text": "Moodle",
+		"imageSrc": "./skills/Moodle_badge.png",
 		"imageAlt": ""
 	}
 ]
