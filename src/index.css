@@ -389,33 +389,43 @@ Interests
 
 .interestCard {
 	height: 50em;
+	padding: 0;
 	display: grid;
-	align-items: center;
-	justify-items: center;
-	grid-template-rows: auto 20em 1fr;
-	grid-template-columns: 1fr;
+}
+
+.interestCard .h3Wrapper {
+	position: relative;
+	overflow: hidden;
+	height: 100%;
 }
 
 .interestCard h3 {
-	text-align: center;
+	background-color: rgba(255,255,255,.6);
 	width: 100%;
-	height: fit-content;
-	margin: .2em 0 1.4em;
+	text-align: right;
+	padding: .3em .8em;
+	color: black;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: 1;
 }
 
-.interestCard img {
-	max-width: 100%;
-	box-shadow: var(--lt-shadow);
-	border-radius: .2em;
-}
-
-.interestCard img:hover {
-	box-shadow: var(--hvy-shadow);
+.interestCard .backgroundImg {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
 }
 
 .interestCard:first-of-type, .interestCard:last-of-type {
 	grid-column: span 3;
+}
 
+.interestCard:first-of-type h3, .interestCard:last-of-type h3 {
+	top: 0;
+	bottom: unset;
 }
 
 .interestCard:nth-of-type(5) {

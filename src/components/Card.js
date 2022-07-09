@@ -15,14 +15,12 @@ class Card extends React.Component {
 		}
 	}
 
-	//in the future, should probably improve "dangerouslySetInnerHTML" use (below) due to potential security risks
-
 	render() {
 		let classes = this.state.focusedCard === this.state.index ? 'card focus' : 'card';
 		return(
 			<div className={classes}>
 				<h4>{this.state.title}</h4>
-				{this.state.description && <p dangerouslySetInnerHTML={{__html: this.state.description}} ></p>}
+				{this.state.description && <p>{this.state.description}</p>}
 				<div className='imgWrapper'>
 					{this.state.githubLink && <a href={this.state.githubLink} target="_blank" title='This repo on GitHub'><img src={GitHubIcon} alt='the GitHub logo'></img></a>}
 					{this.state.prodLink && <a href={this.state.prodLink} target="_blank" title='This project in action'><img src={ProdIcon} alt='World Wide Web icon'></img></a>}
