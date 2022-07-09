@@ -230,6 +230,7 @@ Experience
 .projects {
 	display: grid;
 	grid-template-columns: auto 1fr auto;
+	overflow: hidden;
 }
 
 .projects button {
@@ -257,6 +258,7 @@ Experience
 	border-width: 0 8px 8px 0;
 	display: inline-block;
 	padding: 8px;
+	height: 100%;
 }
 
 .right {
@@ -271,58 +273,79 @@ Experience
 
 #project-slider {
 	display: flex;
-	flex-wrap: wrap;
-	overflow: hidden;
-	height: 500px;
-	width: 100%;
-	margin: 20px 0;
+	width: 98%;
+	gap: 2em;
+	height: 560px;
+	padding: 0 1em;
+	margin: 20px auto;
 	align-items: center;
 	position: relative;
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+
+#project-slider::-webkit-scrollbar {
+	display: none;
 }
 
 .card {
-	width: 76%;
-	padding: 20px;
-	margin: 0 1%;
+	height: 500px;
+	min-width: 500px;
+	padding: 3em 2em;
 	transition: all .3s;
-	display: none;
+	display: grid;
 	align-items: center;
 	justify-items: center;
-	overflow: auto;
 	background-color: #33a1c6;
-	box-shadow: none;
-}
-
-.focus, .prev, .next {
-	position: absolute;
-	display: grid;
-}
-
-.focus {
-	left: 10%;
-	box-shadow: var(--lt-shadow);
-}
-
-.prev {
-	left: -68%;
-}
-
-.next {
-	left: 88%;
-	box-shadow: var(--lt-shadow);
+	box-shadow: var(--highlight);
 }
 
 .card h4 {
 	text-align: center;
 }
 
+.card p {
+	margin: .5em 1em;
+}
+
+.imgWrapper {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.card img {
+	max-width: 8em;
+	filter: brightness(0);
+}
+
+.card img:hover {
+	filter: invert(1) brightness(100);
+}
+
+.card:nth-of-type(n+2) {
+	grid-template-rows: auto 1fr auto;
+	align-items: center;
+}
+
 .card:nth-of-type(1) {
 	z-index: 3;
-	box-shadow: var(--lt-shadow);
 }
 
 .card:nth-of-type(1) h4 {
 	font-size: 6em;
+}
+
+.card:nth-of-type(1) .imgWrapper, .card:last-of-type .imgWrapper {
+	display: none;
+}
+
+.focus {
+	height: 550px;
+	min-width: 550px;
+	padding: 5.5em 4.5em;
+	box-shadow: var(--shadow);
 }
 
 .skills ul {
@@ -365,10 +388,27 @@ Interests
 
 .interestCard {
 	height: 50em;
+	display: grid;
+	align-items: center;
+	justify-items: center;
+	grid-template-rows: auto 20em 1fr;
+	grid-template-columns: 1fr;
+}
+
+.interestCard a {
+	width: 100%;
+	height: 100%;
+	padding: 1em;
+}
+
+.interestCard img {
+	width: 100%;
+	height: 100%;
 }
 
 .interestCard:first-of-type, .interestCard:last-of-type {
 	grid-column: span 3;
+
 }
 
 .interestCard:nth-of-type(5) {
@@ -377,6 +417,9 @@ Interests
 
 .interestCard h3 {
 	text-align: center;
+	width: 100%;
+	height: 100%;
+	margin: 1em 0;
 }
 
 /*
@@ -494,38 +537,9 @@ Media queries
 */
 
 @media screen and (min-width: 650px) {
-	.card {
-		width: 50%;
-	}
-	.focus {
-		left: 25%;
-	}
 	
-	.prev {
-		left: -27%;
-	}
-	
-	.next {
-		left: 77%;
-	}
 }
   
 @media screen and (min-width: 1040px) {
-	.slider-cover{
-		background-image: none;
-	}
-	.card {
-		width: 31%;
-	}
-	.focus {
-		left: 34%;
-	}
 	
-	.prev {
-		left: 2%;
-	}
-	
-	.next {
-		left: 66%;
-	}
 }

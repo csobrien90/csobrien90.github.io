@@ -2,48 +2,28 @@ import React from 'react';
 import Card from "./Card";
 import cardData from "../cardData.json";
 
-window.onload = () => {
-	var cards = Array.from(document.getElementsByClassName("card"));
-	cards[0].className = 'card prev';
-	cards[1].className = 'card focus';
-	cards[2].className = 'card next';
-}
-
 class Slider extends React.Component {
-	
-	next = () => {
-		var cards = Array.from(document.getElementsByClassName("card"));
-		
-		if(cards[cards.length - 2].className === 'card focus') {
-			return;
-		}
-
-		for(let i = 0; i < cards.length - 1; i++) {
-			if (cards[i].className === "card focus") {
-				cards[i].className = 'card prev';
-				cards[i + 1].className = 'card focus';
-				cards[i + 2].className = 'card next';
-				return;
-			};
+	constructor(props) {
+		super(props);
+		this.state = {
+			focusedCard: 0
 		}
 	}
 
-	prev = () => {
-		var cards = Array.from(document.getElementsByClassName("card"));
-		
-		if(cards[1].className === 'card focus') {
-			return;
-		}
+	next = () => {
+		if ( this.state.focusedCard === cardData.length - 1 ) return;
+		this.setState({focusedCard: ++this.state.focusedCard});
+		document.querySelector('.focus').classList.remove('focus');
+		document.querySelectorAll('.card')[this.state.focusedCard].classList.add('focus');
+		document.querySelector('.focus').scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+	}
 
-		for(let i = 1; i < cards.length; i++) {
-			if (cards[i].className === "card focus") {
-				cards[i + 1].className = 'card';
-				cards[i].className = 'card next';
-				cards[i - 1].className = 'card focus';
-				cards[i - 2].className = 'card prev';
-				return;
-			};
-		}
+	prev = () => {
+		if ( this.state.focusedCard === 0 ) return;
+		this.setState({focusedCard: --this.state.focusedCard});
+		document.querySelector('.focus').classList.remove('focus');
+		document.querySelectorAll('.card')[this.state.focusedCard].classList.add('focus');
+		document.querySelector('.focus').scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
 	}
 
 	render() {
@@ -52,7 +32,7 @@ class Slider extends React.Component {
 				<button onClick={this.prev} title="Previous project"><i className='arrow left'></i></button>
 				<article id="project-slider">
 					{cardData && cardData.map((card, index) => {
-						return <Card title={card.title} description={card.description} githubLink={card.githubLink} prodLink={card.prodLink} key={index} />
+						return <Card title={card.title} description={card.description} githubLink={card.githubLink} prodLink={card.prodLink} key={index} index={index} focusedCard={this.state.focusedCard} />
 					})}
 				</article>
 				<button onClick={this.next} title="Next project"><i className='arrow right'></i></button>

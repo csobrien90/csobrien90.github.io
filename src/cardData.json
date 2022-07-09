@@ -7,33 +7,27 @@
 	},
 	{
 		"title": "My Music Page",
-		"prodLink": "",
-		"githubLink": "http://obrientrombone.com",
-		"description": "This is my most recent completed project - my landing page as a professional musician. It is a mobile-first, responsive site that uses semantic HTML5, CSS3, JavaScript, and PHP. Since I initially built this site as the final project of my Code Louisville Front End Web Development course, it's packed with fun JS scripts. Feel free to view <a href='https://github.com/csobrien90/obrien-trombone' target='_blank'>the GitHub repo for this site</a> and check out the README for a full list of design features."
+		"prodLink": "https://obrientrombone.com",
+		"githubLink": "https://github.com/csobrien90/obrien-trombone",
+		"description": "My landing page as a professional musician. It is a mobile-first, responsive site that uses semantic HTML5, CSS3, JavaScript, and PHP. Since I initially built this site as the final project of my Code Louisville Front End Web Development course, it's packed with fun JS scripts. Check out the README in my GitHub repo for a full list of design features."
 	},
 	{
 		"title": "Louisville Jazz Initiative",
-		"prodLink": "",
-		"githubLink": "http://louisvillejazzinitiative.com",
-		"description": "This is the website for the Louisville Jazz Initiative, a non profit organization I co-founded in April 2021. We are a collective of jazz musicians in Louisville, KY committed to culturally authentic playing and teaching of jazz music. I built this website before knowing about mobile-first design, accessibilty standards, and CSS flexbox and am now in the process of updating it to reflect best practices."
+		"prodLink": "https://louisvillejazzinitiative.com",
+		"githubLink": "",
+		"description": "This is the website for the Louisville Jazz Initiative, a non profit organization I co-founded in April 2021. I built this website before knowing about mobile-first design, accessibilty standards, and CSS flexbox and am now in the process of updating it to reflect best practices."
 	},
 	{
 		"title": "Code Breaker",
-		"prodLink": "",
-		"githubLink": "https://csobrien90.github.io/mastermind",
-		"description": "This is my take on the classic paper and pencil game: Mastermind. I built this to practice JavaScript and it quickly became my testing ground for git and GitHub as well. The notebook paper styling has been fun to experiment with but needs a little more tweaking to be made more responsive. Feel free to check it out, play to your hearts content (it's pretty addicting!) and offer any suggestions. If you're interested in the code, you can <a href='https://github.com/csobrien90/mastermind' target='_blank'>check out the GitHub repo here.</a>"
+		"prodLink": "https://csobrien90.github.io/mastermind",
+		"githubLink": "https://github.com/csobrien90/mastermind",
+		"description": "This is my take on the classic paper and pencil game: Mastermind. The notebook paper styling has been fun to experiment with but needs a little more tweaking to be made more responsive. Check it out and play to your hearts content (it's pretty addicting!)"
 	},
 	{
 		"title": "Fiber Coven",
-		"prodLink": "",
-		"githubLink": "https://csobrien90.github.io/fiber-coven",
-		"description": "This is the website for Fiber Coven, a weekly witchy themed podcast about the knitting, spinning, and everything fiber related. Since most of my projects are self directed, I enjoyed this opportunity to work with an established brand. It has also been a fun challenge integrating third party widgets (a PodBean player, MailChimp newsletter sign up, etc.) into the design. If you want to explore how I did that, <a href='https://github.com/csobrien90/fiber-coven' target='_blank'>check out the GitHub repo here.</a>"
-	},
-	{
-		"title": "JavaScript 30 in 30",
-		"prodLink": "",
-		"githubLink": "https://csobrien90.github.io/javascript-30",
-		"description": "This is a website to feature my interpretations of the #JavaScript30 project tutorials by Wes Bos, found on <a href='https://javascript30.com/' target='_blank'>javascript30.com</a>. I've only just started but am really enjoying these bite-sized tasks and learning a lot! Check out the tutorials and feel free to give <a href='https://github.com/csobrien90/javascript-30' target='_blank'>the repo</a> a look as well."
+		"prodLink": "https://fibercoven.com",
+		"githubLink": "https://github.com/csobrien90/fiber-coven",
+		"description": "Fiber Coven is a weekly witchy themed podcast about knitting, spinning, and everything fiber related. Making this website was a great opportunity to work with an established brand and integrate third party widgets like a PodBean player and MailChimp newsletter sign up into the design."
 	},
 	{
 		"title": "More projects coming soon...",
