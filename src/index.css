@@ -373,6 +373,30 @@ Experience
 	max-height: 8em;
 }
 
+.workExperience {
+	display: grid;
+	grid-template-rows: auto 1fr;
+}
+
+.workExperience ul {
+	display: flex;
+	flex-direction: column;
+	gap: 2em;
+	padding: 0;
+	align-items: baseline;
+}
+.workExperience ul li {
+	padding: 2em;
+	display: grid;
+	grid-template-rows: auto auto auto 1fr;
+	align-items: center;
+}
+
+.workExperience ul li p:last-child {
+	margin-top: 1em;
+	grid-row: span 2;
+}
+
 /*
 __________________
 Interests
@@ -382,7 +406,7 @@ Interests
 #interests {
 	background-color: var(--yellow);
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(auto-fill, minmax(40em, 1fr));
 	gap: 3em;
 	justify-content: space-around;
 }
@@ -391,6 +415,8 @@ Interests
 	height: 50em;
 	padding: 0;
 	display: grid;
+	position: relative;
+	grid-template-rows: 24em 1fr;
 }
 
 .interestCard .h3Wrapper {
@@ -402,13 +428,18 @@ Interests
 .interestCard h3 {
 	background-color: rgba(255,255,255,.6);
 	width: 100%;
-	text-align: right;
+	text-align: left;
 	padding: .3em .8em;
 	color: black;
 	position: absolute;
 	bottom: 0;
 	right: 0;
 	z-index: 1;
+}
+
+.interestCard p {
+	padding: 1em;
+	font-size: 2.2em;
 }
 
 .interestCard .backgroundImg {
@@ -420,16 +451,22 @@ Interests
 }
 
 .interestCard:first-of-type, .interestCard:last-of-type {
-	grid-column: span 3;
+	grid-column: span 2;
+	grid-template-rows: 1fr;
 }
 
 .interestCard:first-of-type h3, .interestCard:last-of-type h3 {
-	top: 0;
-	bottom: unset;
+	bottom: 0;
 }
 
-.interestCard:nth-of-type(5) {
-	grid-column: span 2;
+.interestCard:first-of-type p, .interestCard:last-of-type p {
+	position: absolute;
+	background-color: rgba(255,255,255,.6);
+	margin: 4% 5%;
+	padding: 2em;
+	width: 90%;
+	height: 72%;
+	font-size: 3em;
 }
 
 /*

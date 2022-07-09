@@ -1,50 +1,43 @@
 [
 	{
 		"title": "Music",
-		"description": "",
-		"imageSrc": "./images/hillhouse2.jfif",
+		"description": "Sunt, dolores nesciunt. Modi, consectetur, voluptas, mollitia similique vitae iste quidem deserunt saepe dolores aspernatur esse distinctio? Deserunt modi autem, odio animi accusantium porro consectetur suscipit et dolor, unde ipsam nemo incidunt iure.",
+		"imageSrc": "./images/music.jfif",
 		"imageAlt": "",
 		"link": "https://obrientrombone.com"
 	},
 	{
 		"title": "Louisville Jazz Initiative",
-		"description": "",
-		"imageSrc": "",
+		"description": "Sunt, dolores nesciunt. Modi, consectetur, voluptas, mollitia similique vitae iste quidem deserunt saepe dolores aspernatur esse distinctio? Deserunt modi autem, odio animi accusantium porro consectetur suscipit et dolor, unde ipsam nemo incidunt iure.",
+		"imageSrc": "./images/louisville-jazz-initiative.png",
 		"imageAlt": "",
 		"link": "https://louisvillejazzinitiative.com"
 	},
 	{
 		"title": "Code Louisville",
-		"description": "",
-		"imageSrc": "",
+		"description": "Sunt, dolores nesciunt. Modi, consectetur, voluptas, mollitia similique vitae iste quidem deserunt saepe dolores aspernatur esse distinctio? Deserunt modi autem, odio animi accusantium porro consectetur suscipit et dolor, unde ipsam nemo incidunt iure.",
+		"imageSrc": "./images/code-louisville.jpg",
 		"imageAlt": "",
 		"link": "https://codelouisville.org"
 	},
 	{
 		"title": "Urban Farming",
-		"description": "",
-		"imageSrc": "",
+		"description": "Sunt, dolores nesciunt. Modi, consectetur, voluptas, mollitia similique vitae iste quidem deserunt saepe dolores aspernatur esse distinctio? Deserunt modi autem, odio animi accusantium porro consectetur suscipit et dolor, unde ipsam nemo incidunt iure.",
+		"imageSrc": "./images/garden.jpg",
 		"imageAlt": "",
 		"link": "https://louisvillegrows.org/"
 	},
 	{
 		"title": "Mutual Aid Organizations",
-		"description": "",
-		"imageSrc": "",
+		"description": "Sunt, dolores nesciunt. Modi, consectetur, voluptas, mollitia similique vitae iste quidem deserunt saepe dolores aspernatur esse distinctio? Deserunt modi autem, odio animi accusantium porro consectetur suscipit et dolor, unde ipsam nemo incidunt iure.",
+		"imageSrc": "./images/mutual-aid.webp",
 		"imageAlt": "",
 		"link": "https://louisvillecommunitygrocery.com/"
 	},
 	{
-		"title": "Placeholder title",
-		"description": "",
-		"imageSrc": "",
-		"imageAlt": "",
-		"link": ""
-	},
-	{
 		"title": "Kitty With a Cupcake",
-		"description": "",
-		"imageSrc": "",
+		"description": "Sunt, dolores nesciunt. Modi, consectetur, voluptas, mollitia similique vitae iste quidem deserunt saepe dolores aspernatur esse distinctio? Deserunt modi autem, odio animi accusantium porro consectetur suscipit et dolor, unde ipsam nemo incidunt iure.",
+		"imageSrc": "./images/kitty.jpg",
 		"imageAlt": "",
 		"link": "https://kittywithacupcake.com"
 	}

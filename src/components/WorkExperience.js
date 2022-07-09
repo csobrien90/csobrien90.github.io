@@ -9,7 +9,7 @@ class WorkExperience extends React.Component {
 				<ul>
 				{
 					workExperience.map((job, index) => {
-						return <li key={index}>
+						return <li key={index} className='backgroundBox'>
 							<h4>{job.title}</h4>
 							{job.company && <p className='company'>{job.company}</p>}
 							<p className='workExperienceDates'>{job.time}</p>

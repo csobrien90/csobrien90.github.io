@@ -16,11 +16,10 @@ class InterestCard extends React.Component {
 	render() {
 		return(
 			<article className='interestCard backgroundBox' key={this.state.key}>
-				<header className='h3Wrapper'>
+				<a className='h3Wrapper' href={this.state.link} target="_blank" key={this.state.key}>
 					<h3>{this.state.title}</h3>
 					<img className='backgroundImg' src={this.state.imageSrc} alt={this.state.imageAlt}></img>
-				</header>
-				{/* <a href={this.state.link} target="_blank" key={this.state.key}></a> */}
+				</a>
 				<p>{this.state.description}</p>
 			</article>
 		)
