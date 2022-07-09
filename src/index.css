@@ -15,6 +15,7 @@ Imports and Variables
 	--yellow: #ddaf4a;
 	--boxBackground: rgba(255, 255, 255, .2);
 
+	--hvy-shadow: 0 0 5px rgba(0, 0, 0, .8);
 	--shadow: 0 0 5px rgba(0, 0, 0, .5);
 	--lt-shadow: 0 0 4px rgba(0, 0, 0, .3);
 	--highlight: 0 0 5px var(--boxBackground);
@@ -381,7 +382,7 @@ Interests
 #interests {
 	background-color: var(--yellow);
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(40em, 1fr));
+	grid-template-columns: repeat(4, 1fr);
 	gap: 3em;
 	justify-content: space-around;
 }
@@ -395,15 +396,21 @@ Interests
 	grid-template-columns: 1fr;
 }
 
-.interestCard a {
+.interestCard h3 {
+	text-align: center;
 	width: 100%;
-	height: 100%;
-	padding: 1em;
+	height: fit-content;
+	margin: .2em 0 1.4em;
 }
 
 .interestCard img {
-	width: 100%;
-	height: 100%;
+	max-width: 100%;
+	box-shadow: var(--lt-shadow);
+	border-radius: .2em;
+}
+
+.interestCard img:hover {
+	box-shadow: var(--hvy-shadow);
 }
 
 .interestCard:first-of-type, .interestCard:last-of-type {
@@ -413,13 +420,6 @@ Interests
 
 .interestCard:nth-of-type(5) {
 	grid-column: span 2;
-}
-
-.interestCard h3 {
-	text-align: center;
-	width: 100%;
-	height: 100%;
-	margin: 1em 0;
 }
 
 /*
@@ -498,7 +498,7 @@ Connect
 	grid-area: socialMediaLinks;
 	align-self: flex-start;
 	display: grid;
-	grid-template-columns: repeat(3, 100px);
+	grid-template-columns: repeat(4, 100px);
 	align-items: center;
 	justify-items: center;
 	justify-content: center;
@@ -510,9 +510,15 @@ Connect
 	padding: 2em;
 }
 
+.socialMediaLinks .githubIcon {
+	filter: invert(1) brightness(100);
+}
+
 .socialMediaLinks a[title="Facebook"] {--socialHover: #4267B2}
 .socialMediaLinks a[title="Instagram"] {--socialHover: #E1306C}
 .socialMediaLinks a[title="LinkedIn"] {--socialHover: #0a66c3}
+.socialMediaLinks a[title="GitHub"] {--socialHover: #000000}
+
 
 .socialMediaLinks a:hover, .socialMediaLinks a:focus {
 	background-color: var(--socialHover);
