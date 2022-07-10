@@ -6,7 +6,8 @@ class Navigation extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			activeLink: "about"
+			activeLink: "about",
+			expanded: false
 		}
 	}
 
@@ -30,9 +31,13 @@ class Navigation extends React.Component {
 		})
 	}
 
+	expand = (e) => {
+		this.setState({expanded: !this.state.expanded});
+	}
+
 	render() {
 		return(
-			<nav className='pageNav'>
+			<nav className='pageNav' onClick={this.expand} aria-expanded={this.state.expanded}>
 				{
 					links && links.map((link, index) => {
 						const activeClass = this.state.activeLink === link.displayText.toLowerCase() ? 'active' : '';

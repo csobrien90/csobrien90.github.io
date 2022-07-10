@@ -86,7 +86,7 @@ main {
 
 section {
 	min-height: 100vh;
-	padding: 2em;
+	padding: 9em 2em 2em;
 	box-shadow: var(--shadow);
 }
 
@@ -108,26 +108,53 @@ Navigation
 	position: fixed;
 	top: 0;
 	width: 100%;
-	height: 5.7em;
-	z-index: 5 ;
-	padding: .8em 0 .5em;
+	z-index: 5;
 	min-width: 60%;
+	display: grid;
+}
+
+.pageNav[aria-expanded="true"] a {
+	padding: .4em .8em;
+	max-height: 100%;
+	border-bottom: 2px solid var(--black);
+	background-color: rgba(255,255,255, .4);
 }
 
 .pageNav a {
 	font-size: 2rem;
-	padding: .4em 1.5em;
-	border-bottom: 2px solid var(--black);
 	position: relative;
 	background-color: var(--boxBackground);
 	text-decoration: none;
-	color: var(--black)
+	color: var(--black);
+	max-height: 0;
+	overflow: hidden;
 }
 
 .pageNav a:hover, a.active {
 	font-weight: bold;
 	background-color: rgba(255, 255, 255, .8);
 	box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+	padding: .4em .8em;
+	max-height: 100%;
+	border-bottom: 2px solid var(--black);
+}
+
+.pageNav a.active::after {
+	content: '';
+	margin-left: .3em;
+	margin-bottom: .1em;
+	display: inline-block;
+	width: .3em;
+	height: .3em;
+	border-right: 5px solid black;
+	border-top: 5px solid black;
+	transform: rotate(45deg);
+	transition: all .2s;
+}
+
+.pageNav[aria-expanded="true"] a.active::after {
+	margin-left: .5em;
+	transform: rotate(135deg);
 }
 
 #topLink {
@@ -611,6 +638,22 @@ Media queries
 }
 
 @media screen and (min-width: 768px) {
+	.pageNav {
+		height: 5.7em;
+		padding: .8em 0 .5em;
+		display: block;
+	}
+
+	.pageNav a {
+		padding: .4em .8em;
+		max-height: 100%;
+		border-bottom: 2px solid var(--black);
+	}
+
+	.pageNav a.active::after {
+		content: none;
+	}
+
 	#about {
 		gap: 3em 6em;
 	}
@@ -643,6 +686,10 @@ Media queries
 }
   
 @media screen and (min-width: 1040px) {
+	.pageNav a {
+		padding: .4em 1.5em;
+	}
+
 	#about {
 		grid-template-areas:
 		"pic heading"
