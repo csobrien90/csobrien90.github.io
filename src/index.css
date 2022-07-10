@@ -719,7 +719,7 @@ Media queries
 	
 	.interestCard:first-of-type p, .interestCard:last-of-type p {
 		position: absolute;
-		background-color: rgba(255,255,255,.6);
+		background-color: rgba(255,255,255,.8);
 		margin: 4% 5%;
 		padding: 2em;
 		width: 90%;
