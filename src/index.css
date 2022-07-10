@@ -86,7 +86,7 @@ main {
 
 section {
 	min-height: 100vh;
-	padding: 9em 7em;
+	padding: 9em 5em;
 	box-shadow: var(--shadow);
 }
 
@@ -156,22 +156,28 @@ About
 #about {
 	display: grid;
 	grid-template-areas:
-		"pic heading"
-		"pic about";
+	"pic"
+	"pic"
+	"heading"
+	"about";
 	align-items: center;
-	gap: 6em 12em;
+	gap: 1em;
 	background-color: var(--black);
 	color: white;
+	text-align: center;
 }
 
 #about .imgWrapper {
 	grid-area: pic;
 	position: relative;
+	width: 100%;
+	margin: 0 auto;
 }
 
 #about img {
-	max-width: 600px;
-	margin: 4em;
+	width: 100%;
+	height: 100%;
+	padding: 4em;
 }
 
 #about .imgBorderWrapper {
@@ -203,7 +209,6 @@ About
 #about p {
 	grid-area: about;
 	align-self: flex-start;
-	padding-right: 3em;
 }
 
 /*
@@ -589,10 +594,31 @@ Media queries
 ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
 */
 
-@media screen and (min-width: 650px) {
-	
+@media screen and (min-width: 768px) {
+	#about {
+		gap: 3em 6em;
+	}
 }
   
 @media screen and (min-width: 1040px) {
+	#about {
+		grid-template-areas:
+		"pic heading"
+		"pic about";
+		text-align: left;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	section {
+		padding: 9em 7em;
+	}
 	
+	#about {
+		gap: 6em 12em;
+	}
+
+	#about p {
+		padding-right: 3em;
+	}
 }
