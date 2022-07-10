@@ -86,7 +86,7 @@ main {
 
 section {
 	min-height: 100vh;
-	padding: 9em 5em;
+	padding: 2em;
 	box-shadow: var(--shadow);
 }
 
@@ -485,11 +485,12 @@ Connect
 	position: relative;
 	display: grid;
 	grid-template-areas: 
-		"contactForm connectText"
-		"contactForm socialMediaLinks";
-	grid-template-columns: 1fr 1fr;
-	gap: 4em;
+		"contactForm"
+		"connectText"
+		"socialMediaLinks";
+	gap: 2em;
 	align-items: center;
+	justify-content: center;
 }
 
 .contactForm {
@@ -497,7 +498,7 @@ Connect
 	display: grid;
 	grid-template-rows: auto auto auto 24em auto;
 	justify-self: center; 
-	gap: 1em;
+	gap: 2em;
 	padding: 2em 4em;
 	min-height: fit-content;
 }
@@ -508,7 +509,7 @@ Connect
 
 .contactForm input {
 	line-height: 1.6;
-	width: 50%;
+	width: 100%;
 	font-size: 1em;
 	margin-top: .2em;
 	padding: 0 .5em;
@@ -549,12 +550,13 @@ Connect
 .socialMediaLinks {
 	grid-area: socialMediaLinks;
 	align-self: flex-start;
-	display: grid;
+	display: flex;
+	flex-wrap: wrap;
 	grid-template-columns: repeat(4, 100px);
 	align-items: center;
 	justify-items: center;
 	justify-content: center;
-	grid: 2em;
+	gap: 2em;
 }
 
 .socialMediaLinks a {
@@ -594,9 +596,25 @@ Media queries
 ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
 */
 
+@media screen and (min-width: 500px) {
+	section {
+		padding: 9em 5em;
+	}
+}
+
 @media screen and (min-width: 768px) {
 	#about {
 		gap: 3em 6em;
+	}
+
+	.socialMediaLinks {
+		align-self: flex-start;
+		display: grid;
+		grid-template-columns: repeat(4, 100px);
+		align-items: center;
+		justify-items: center;
+		justify-content: center;
+		gap: 2em;
 	}
 }
   
@@ -606,6 +624,14 @@ Media queries
 		"pic heading"
 		"pic about";
 		text-align: left;
+	}
+
+	#connect {
+		grid-template-areas: 
+			"contactForm connectText"
+			"contactForm socialMediaLinks";
+		grid-template-columns: 1fr 1fr;
+		gap: 4em;
 	}
 }
 
@@ -620,5 +646,8 @@ Media queries
 
 	#about p {
 		padding-right: 3em;
+	}
+	.contactForm input {
+		width: 50%;
 	}
 }
