@@ -687,7 +687,7 @@ Media queries
   
 @media screen and (min-width: 1040px) {
 	.pageNav a {
-		padding: .4em 1.5em;
+		padding: .4em 1.5em !important;
 	}
 
 	#about {
