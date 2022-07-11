@@ -653,7 +653,7 @@ Media queries
 		padding: 9em 5em;
 	}
 
-	p, label {
+	p, label, .workExperience ul ul {
 		font-size: 2.5em;
 	}
 

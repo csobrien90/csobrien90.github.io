@@ -6,6 +6,17 @@
 		"description": ""
 	},
 	{
+		"title": "Portfolio (this page!)",
+		"prodLink": "#about",
+		"githubLink": "https://github.com/csobrien90/portfolio",
+		"description": "This site is built in React and uses all original components. Some of the cooler features (in my humble opinion) include the dual-purpose navigation/section header, mobile friendly project slider, totally responsive layout, and original themed color block design. Coming soon: serverless contact form functionality."
+	},
+	{
+		"title": "Starter Pack",
+		"githubLink": "https://github.com/csobrien90/starter-pack",
+		"description": "Starter Pack is a WordPress plugin I wrote to assist with devving on custom WordPress/WooCommerce themes and plugins. It provides helpful utility functions for debugging and logging throughout the development process as well as a host of security features perfect for jump starting work on any new WordPress site."
+	},
+	{
 		"title": "My Music Page",
 		"prodLink": "https://obrientrombone.com",
 		"githubLink": "https://github.com/csobrien90/obrien-trombone",
@@ -21,7 +32,7 @@
 		"title": "Code Breaker",
 		"prodLink": "https://csobrien90.github.io/mastermind",
 		"githubLink": "https://github.com/csobrien90/mastermind",
-		"description": "This is my take on the classic paper and pencil game: Mastermind. The notebook paper styling has been fun to experiment with but needs a little more tweaking to be made more responsive. Check it out and play to your hearts content (it's pretty addicting!)"
+		"description": "This is my take on the classic paper and pencil game: Mastermind. The notebook paper styling has been fun to experiment with but needs a little more tweaking to be made more responsive. Check it out, play to your hearts content (it's pretty addicting!) and offer any suggestions."
 	},
 	{
 		"title": "Fiber Coven",
@@ -30,7 +41,7 @@
 		"description": "Fiber Coven is a weekly witchy themed podcast about knitting, spinning, and everything fiber related. Making this website was a great opportunity to work with an established brand and integrate third party widgets like a PodBean player and MailChimp newsletter sign up into the design."
 	},
 	{
-		"title": "More projects coming soon...",
+		"title": "More project coming soon...",
 		"prodLink": "",
 		"githubLink": "",
 		"description": ""
