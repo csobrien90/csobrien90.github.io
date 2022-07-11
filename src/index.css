@@ -117,7 +117,7 @@ Navigation
 	padding: .4em .8em;
 	max-height: 100%;
 	border-bottom: 2px solid var(--black);
-	background-color: rgba(255,255,255, .4);
+	background-color: rgba(255,255,255, .8);
 }
 
 .pageNav a {
@@ -321,7 +321,7 @@ Experience
 	display: flex;
 	width: 98%;
 	gap: 2em;
-	height: 560px;
+	height: 460px;
 	padding: 0 1em;
 	margin: 20px auto;
 	align-items: center;
@@ -335,9 +335,9 @@ Experience
 }
 
 .card {
-	height: 500px;
+	height: 400px;
 	min-width: 82vw;
-	padding: 4em 2em;
+	padding: 3em 1em;
 	transition: all .3s;
 	display: grid;
 	align-items: center;
@@ -347,7 +347,7 @@ Experience
 }
 
 .focus {
-	height: 550px;
+	height: 450px;
 	min-width: 82vw;
 	box-shadow: var(--shadow);
 }
@@ -358,6 +358,7 @@ Experience
 
 .card p {
 	margin: .5em 1em;
+	font-size: 1.9em;
 }
 
 .imgWrapper {
@@ -395,7 +396,7 @@ Experience
 
 .skills ul {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(16em, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(12em, 1fr));
 	align-items: center;
 	justify-items: center;
 	gap: 2em;
@@ -515,7 +516,7 @@ Interests
 
 .interestCard p {
 	padding: 1em;
-	font-size: 2.2em;
+	font-size: 2em;
 }
 
 .interestCard .backgroundImg {
@@ -608,7 +609,6 @@ Connect
 	align-items: center;
 	justify-items: center;
 	justify-content: center;
-	gap: 2em;
 }
 
 .socialMediaLinks a {
@@ -690,13 +690,12 @@ Media queries
 	}
 
 	.card {
-		min-width: 500px;
+		min-width: 400px;
 		padding: 2em;
 	}
 
 	.focus {
-		min-width: 550px;
-		padding: 4.5em;
+		min-width: 450px;
 	}
 
 	.socialMediaLinks {
