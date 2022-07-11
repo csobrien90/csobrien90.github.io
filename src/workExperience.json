@@ -3,18 +3,31 @@
 		"title": "Web Developer I",
 		"company": "Kentucky Education Television",
 		"time": "October 2021 - Present",
-		"description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur delectus ullam velit est ut laborum! Obcaecati voluptatum iusto maiores, voluptatibus ipsa, excepturi nesciunt, quidem in eum facere dolores aperiam cumque."
-	},
-	{
-		"title": "Mentor - Web Development",
-		"company": "Code Louisville",
-		"time": "May 2022 - Present",
-		"description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur delectus ullam velit est ut laborum! Obcaecati voluptatum iusto maiores, voluptatibus ipsa, excepturi nesciunt, quidem in eum facere dolores aperiam cumque."
+		"description": [
+			"Creates plugins and customizes themes in WordPress and Moodle",
+			"Collaborates with a team of seven developers (Agile, Jira, Bitbucket)",
+			"Writes endpoints for an API built with PHP (Symfony and Doctrine)",
+			"Manages ten public facing sites including one WooCommerce store and two online learning platforms",
+			"Utilizes Amazon Web Services for hosting, caching, security, and domain management"
+		]
 	},
 	{
 		"title": "Freelance Web Developer",
 		"company": "",
 		"time": "January 2021 - Present",
-		"description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur delectus ullam velit est ut laborum! Obcaecati voluptatum iusto maiores, voluptatibus ipsa, excepturi nesciunt, quidem in eum facere dolores aperiam cumque."
+		"description": [
+			"Builds websites and customizes Shopify and WordPress themes for small businesses and non-profits",
+			"Contributes to open source projects and makes open source WordPress plugins and node packages",
+			"Conducts accessibility audits, addresses WCAG compliance issues, and advises for improved site performance"
+		]
+	},
+	{
+		"title": "Mentor - Web Development",
+		"company": "Code Louisville",
+		"time": "May 2022 - Present",
+		"description": [
+			"Hosts weekly meetings with a class of thirty new front-end web developers",
+			"Prepares live coding demonstrations of fundamental programming concepts in HTML, CSS, and JavaScript"
+		]
 	}
 ]

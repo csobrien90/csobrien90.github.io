@@ -15,8 +15,8 @@
 		"imageAlt": ""
 	},
 	{
-		"text": "Aesthetic sense",
-		"imageSrc": "./skills/Aesthetic_badge.png",
+		"text": "UX/UI Design",
+		"imageSrc": "./skills/UxUi_badge.png",
 		"imageAlt": ""
 	},
 	{
@@ -50,11 +50,6 @@
 		"imageAlt": ""
 	},
 	{
-		"text": "UX/UI Design",
-		"imageSrc": "./skills/UxUi_badge.png",
-		"imageAlt": ""
-	},
-	{
 		"text": "Git, Github, Bitbucket",
 		"imageSrc": "./skills/Git_badge.png",
 		"imageAlt": ""
@@ -72,6 +67,11 @@
 	{
 		"text": "WordPress, WooCommerce",
 		"imageSrc": "./skills/WordPress_badge.png",
+		"imageAlt": ""
+	},
+	{
+		"text": "Amazon Web Services",
+		"imageSrc": "./skills/AWS_badge.png",
 		"imageAlt": ""
 	},
 	{

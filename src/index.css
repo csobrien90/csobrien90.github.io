@@ -441,6 +441,31 @@ Experience
 	grid-row: span 2;
 }
 
+.workExperience ul ul {
+	display: unset;
+	font-size: 2em;
+	margin-top: 1em;
+}
+
+.workExperience ul ul li {
+	padding: .4em;
+	display: inline-block;
+	line-height: 1.4em;
+}
+
+
+.workExperience ul ul li::before {
+	content: '';
+	display: inline-block;
+	width: .3em;
+	height: .3em;
+	border-right: 2px solid black;
+	border-top: 2px solid black;
+	transform: rotate(45deg);
+	margin-right: .6em;
+	margin-bottom: .2em;
+}
+
 /*
 __________________
 Interests
@@ -628,7 +653,7 @@ Media queries
 		padding: 9em 5em;
 	}
 
-	p {
+	p, label {
 		font-size: 2.5em;
 	}
 

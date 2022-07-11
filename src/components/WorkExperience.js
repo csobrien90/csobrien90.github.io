@@ -13,7 +13,11 @@ class WorkExperience extends React.Component {
 							<h4>{job.title}</h4>
 							{job.company && <p className='company'>{job.company}</p>}
 							<p className='workExperienceDates'>{job.time}</p>
-							<p className='workExperienceDescription'>{job.description}</p>
+							<ul className='workExperienceDescription'>
+								{job.description.map((duty) => {
+									return <li>{duty}</li>;
+								})}
+							</ul>
 						</li>
 					})
 				}
