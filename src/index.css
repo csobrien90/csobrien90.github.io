@@ -337,7 +337,7 @@ Experience
 .card {
 	height: 400px;
 	min-width: 82vw;
-	padding: 3em 1em;
+	padding: 2em 1em 3em;
 	transition: all .3s;
 	display: grid;
 	align-items: center;
@@ -358,7 +358,7 @@ Experience
 
 .card p {
 	margin: .5em 1em;
-	font-size: 1.9em;
+	font-size: 1.8em;
 }
 
 .imgWrapper {
@@ -431,7 +431,6 @@ Experience
 	align-items: baseline;
 }
 .workExperience ul li {
-	padding: 2em;
 	display: grid;
 	grid-template-rows: auto auto auto 1fr;
 	align-items: center;
@@ -544,6 +543,7 @@ Connect
 	gap: 2em;
 	align-items: center;
 	justify-content: center;
+	padding-bottom: 6em;
 }
 
 .contactForm {
