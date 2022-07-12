@@ -396,7 +396,7 @@ Experience
 
 .skills ul {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(12em, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(14em, 1fr));
 	align-items: center;
 	justify-items: center;
 	gap: 2em;
@@ -411,6 +411,7 @@ Experience
 	display: grid;
 	align-items: center;
 	justify-items: center;
+	font-size: .8em;
 }
 
 .skills ul li img {
@@ -732,6 +733,10 @@ Media queries
 		grid-column: span 2;
 	}
 
+	.skills ul {
+		font-size: 1.2em;
+	}
+
 	.interestCard:first-of-type, .interestCard:last-of-type {
 		grid-column: span 2;
 		grid-template-rows: 1fr;
@@ -781,6 +786,7 @@ Media queries
 	#about p {
 		padding-right: 3em;
 	}
+
 	.contactForm input {
 		width: 50%;
 	}

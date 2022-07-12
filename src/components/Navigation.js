@@ -32,7 +32,9 @@ class Navigation extends React.Component {
 	}
 
 	expand = (e) => {
-		this.setState({expanded: !this.state.expanded});
+		if (window.innerWidth < 769) {
+			this.setState({expanded: !this.state.expanded});
+		}
 	}
 
 	render() {
