@@ -9,7 +9,7 @@
 		"title": "Portfolio (this page!)",
 		"prodLink": "#about",
 		"githubLink": "https://github.com/csobrien90/portfolio",
-		"description": "This site is built in React and uses all original components. Some of the cooler features (in my humble opinion) include the dual-purpose navigation and section header, mobile friendly project slider, totally responsive layout, and original themed color block design. Coming soon: serverless contact form functionality."
+		"description": "This site is built in React and uses all original components. Some of the cooler features (IMHO) include the dual-purpose navigation and section header, project slider, totally responsive layout, and original themed color block design, and serverless contact form functionality using AWS Lambda."
 	},
 	{
 		"title": "Starter Pack",
