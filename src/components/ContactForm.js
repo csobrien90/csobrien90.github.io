@@ -7,7 +7,8 @@ class ContactForm extends React.Component {
 			name: '',
 			email: '',
 			subject: '',
-			message: ''
+			message: '',
+			loading: false
 		}
 	}
 
@@ -54,7 +55,8 @@ class ContactForm extends React.Component {
 
 	handleSubmit = (e) => {
 		e.preventDefault();
-
+		this.setState({loading: true});
+		
 		// Get user input from state
 		let formData = {
 			"name": this.state.name,
@@ -66,6 +68,7 @@ class ContactForm extends React.Component {
 		// Validate email
 		const isRealEmail = this.validateEmail(formData.email);
 		if (!isRealEmail) {
+			this.setState({loading: false});
 			this.showFormSubmitMessage('Please enter a valid email and try again.');			
 			return;
 		}
@@ -96,12 +99,15 @@ class ContactForm extends React.Component {
 			if(response.ok) {
 				return response.json();
 			} else {
+				this.setState({loading: false});
 				this.showFormSubmitMessage('Something went wrong. Please refresh the page and try again.');
 			}
 		}).then(json => {
 			if (json.status === 200 || json.status === 500) {
+				this.setState({loading: false});
 				this.showFormSubmitMessage(json.message);
 			} else {
+				this.setState({loading: false});
 				this.showFormSubmitMessage('Something went wrong. Please refresh the page and try again.');
 			}
 
@@ -137,6 +143,7 @@ class ContactForm extends React.Component {
 				</label>
 				<button id="contactFormSubmit" onClick={this.handleSubmit}>Send Message</button>
 				<p className='contactFormSubmitResponse'></p>
+				{this.state.loading && <div className='loadingCover'><p>Sending...</p></div>}
 			</form>
 		)
 	}
