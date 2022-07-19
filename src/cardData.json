@@ -12,6 +12,11 @@
 		"description": "This site is built in React and uses all original components. Some of the cooler features (IMHO) include the dual-purpose navigation and section header, project slider, totally responsive layout, and original themed color block design, and serverless contact form functionality using AWS Lambda."
 	},
 	{
+		"title": "Lighthouse Audit Automation",
+		"githubLink": "https://github.com/csobrien90/lighthouse-audit-automation",
+		"description": "This is a node package to automate Google Lighthouse audits on multiple sites simultaneously. Given a root URL and array of directories/subdirectories/pages, this outputs a .csv containing two tables (mobile and desktop) with metrics for performance, accessibility, adherence to best practices, and SEO."
+	},
+	{
 		"title": "Starter Pack",
 		"githubLink": "https://github.com/csobrien90/starter-pack",
 		"description": "Starter Pack is a WordPress plugin I wrote to assist with devving on custom WordPress themes and plugins. It provides helpful utility functions for debugging and logging throughout the development process as well as a host of security features perfect for jump starting work on any new WordPress site."
