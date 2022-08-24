@@ -7,12 +7,12 @@ Imports and Variables
 @import url('https://fonts.googleapis.com/css2?family=Antic&display=swap');
 
 :root {
-	--black: #2b1a22;
+	--black: #1e1c1f;
 	--white: #efdbc4;
-	--tan: #bc946b;
-	--red-orange: #f05741;
-	--blue: #0089b8;
-	--yellow: #ddaf4a;
+	--tan: #aa9f8c;
+	--red-orange: #e94135;
+	--blue: #00a4da;
+	--yellow: #e0e29a;
 	--boxBackground: rgba(255, 255, 255, .2);
 
 	--hvy-shadow: 0 0 5px rgba(0, 0, 0, .8);
@@ -211,6 +211,7 @@ About
 	width: 100%;
 	height: 100%;
 	padding: 4em;
+	max-height: 80vh;
 }
 
 #about .imgBorderWrapper {
@@ -348,7 +349,7 @@ Experience
 	display: grid;
 	align-items: center;
 	justify-items: center;
-	background-color: #33a1c6;
+	background-color: var(--boxBackground);
 	box-shadow: var(--highlight);
 }
 
@@ -592,14 +593,14 @@ Connect
 	font-weight: bold;
 	border: none;
 	background-color: var(--blue);
-	color: white;
+	color: black;
 	border-radius: .3em;
 	box-shadow: var(--lt-shadow);
 }
 
 #contactFormSubmit:hover, #contactFormSubmit:focus {
 	cursor: pointer;
-	background-color: #007097;
+	background-color: hsl(195, 100%, 38%); /* 5% less than var(--blue) */
 	box-shadow: var(--shadow);
 }
 
