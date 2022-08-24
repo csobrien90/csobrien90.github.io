@@ -10,7 +10,7 @@ class About extends React.Component {
 		return(
 			<section className="about" id="about">
 				<div className='imgWrapper'>
-					<img src={headshot} alt="a headshot of Chad O'Brien dressed in a suit"></img>
+					<img src={headshot} alt="a headshot of Chad O'Brien dressed in a colorful, patterned shirt"></img>
 					<div className='imgBorderWrapper'>
 						{divArr.map(boxNum => <div className='imgBorderBox' key={boxNum}></div>)}
 					</div>
