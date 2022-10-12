@@ -1,8 +1,8 @@
 import React from 'react';
-import linkedInIcon from '../media/linkedinicon.png';
-import instagramIcon from '../media/instagramicon.png';
-import facebookIcon from '../media/facebookicon.png';
-import gitHubIcon from '../media/GitHub_icon.png';
+import linkedInIcon from '../media/linkedinicon.webp';
+import instagramIcon from '../media/instagramicon.webp';
+import facebookIcon from '../media/facebookicon.webp';
+import gitHubIcon from '../media/GitHub_icon.webp';
 
 class SocialMediaLinks extends React.Component {    
 	render() {

@@ -1,82 +1,82 @@
 [
 	{
 		"text": "Fast learner",
-		"imageSrc": "./skills/FastLearner_badge.png",
+		"imageSrc": "./skills/FastLearner_badge.webp",
 		"imageAlt": ""
 	},
 	{
 		"text": "Detail oriented",
-		"imageSrc": "./skills/Detail_badge.png",
+		"imageSrc": "./skills/Detail_badge.webp",
 		"imageAlt": ""
 	},
 	{
 		"text": "Communication",
-		"imageSrc": "./skills/Teamwork_badge.png",
+		"imageSrc": "./skills/Teamwork_badge.webp",
 		"imageAlt": ""
 	},
 	{
 		"text": "UX/UI Design",
-		"imageSrc": "./skills/UxUi_badge.png",
+		"imageSrc": "./skills/UxUi_badge.webp",
 		"imageAlt": ""
 	},
 	{
 		"text": "HTML5",
-		"imageSrc": "./skills/HTML5_badge.png",
+		"imageSrc": "./skills/HTML5_badge.webp",
 		"imageAlt": ""
 	},
 	{
 		"text": "CSS3",
-		"imageSrc": "./skills/CSS3_badge.png",
+		"imageSrc": "./skills/CSS3_badge.webp",
 		"imageAlt": ""
 	},
 	{
 		"text": "JavaScript, jQuery",
-		"imageSrc": "./skills/JS_badge.png",
+		"imageSrc": "./skills/JS_badge.webp",
 		"imageAlt": ""
 	},
 	{
 		"text": "PHP",
-		"imageSrc": "./skills/PHP_badge.png",
+		"imageSrc": "./skills/PHP_badge.webp",
 		"imageAlt": ""
 	},
 	{
 		"text": "React",
-		"imageSrc": "./skills/React_badge.png",
+		"imageSrc": "./skills/React_badge.webp",
 		"imageAlt": ""
 	},
 	{
 		"text": "Node",
-		"imageSrc": "./skills/Node_badge.png",
+		"imageSrc": "./skills/Node_badge.webp",
 		"imageAlt": ""
 	},
 	{
 		"text": "Git, Github, Bitbucket",
-		"imageSrc": "./skills/Git_badge.png",
+		"imageSrc": "./skills/Git_badge.webp",
 		"imageAlt": ""
 	},
 	{
 		"text": "WCAG 2.2",
-		"imageSrc": "./skills/WCAG_badge.png",
+		"imageSrc": "./skills/WCAG_badge.webp",
 		"imageAlt": ""
 	},
 	{
 		"text": "Adobe Creative Suite",
-		"imageSrc": "./skills/Adobe_badge.png",
+		"imageSrc": "./skills/Adobe_badge.webp",
 		"imageAlt": ""
 	},
 	{
 		"text": "WordPress, WooCommerce",
-		"imageSrc": "./skills/WordPress_badge.png",
+		"imageSrc": "./skills/WordPress_badge.webp",
 		"imageAlt": ""
 	},
 	{
 		"text": "Amazon Web Services",
-		"imageSrc": "./skills/AWS_badge.png",
+		"imageSrc": "./skills/AWS_badge.webp",
 		"imageAlt": ""
 	},
 	{
 		"text": "Moodle",
-		"imageSrc": "./skills/Moodle_badge.png",
+		"imageSrc": "./skills/Moodle_badge.webp",
 		"imageAlt": ""
 	}
 ]

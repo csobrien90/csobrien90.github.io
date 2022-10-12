@@ -1,5 +1,5 @@
 import React from 'react';
-import headshot from '../media/headshot.jpg';
+import headshot from '../media/headshot.webp';
 
 class About extends React.Component {
 	render() {

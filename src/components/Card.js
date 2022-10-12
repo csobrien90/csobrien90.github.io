@@ -1,6 +1,6 @@
 import React from 'react';
-import GitHubIcon from '../media/GitHub_icon.png';
-import ProdIcon from '../media/Prod_icon.png';
+import GitHubIcon from '../media/GitHub_icon.webp';
+import ProdIcon from '../media/Prod_icon.webp';
 
 class Card extends React.Component {
 	constructor(props) {
