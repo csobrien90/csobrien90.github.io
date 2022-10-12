@@ -19,7 +19,7 @@ class Card extends React.Component {
 		let classes = this.state.focusedCard === this.state.index ? 'card focus' : 'card';
 		return(
 			<div className={classes}>
-				<h4>{this.state.title}</h4>
+				{this.state.index === 0 ? <h3>{this.state.title}</h3> : <h4>{this.state.title}</h4>}
 				{this.state.description && <p>{this.state.description}</p>}
 				<div className='imgWrapper'>
 					{this.state.githubLink && <a href={this.state.githubLink} target="_blank" rel="noreferrer" title='This repo on GitHub'><img src={GitHubIcon} alt='the GitHub logo'></img></a>}

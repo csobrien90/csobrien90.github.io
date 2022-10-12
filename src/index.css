@@ -263,6 +263,10 @@ Experience
 	margin-bottom: 1em;
 }
 
+#experience .card h3 {
+	font-size: 6em;
+}
+
 .projects {
 	display: grid;
 	grid-template-areas: 
@@ -393,11 +397,7 @@ Experience
 	z-index: 3;
 }
 
-.card:nth-of-type(1) h4 {
-	font-size: 6em;
-}
-
-.card:nth-of-type(1) .imgWrapper, .card:last-of-type .imgWrapper {
+.card:nth-of-type(1) .imgWrapper {
 	display: none;
 }
 
