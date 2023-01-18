@@ -426,6 +426,10 @@ Experience
 	max-height: 8em;
 }
 
+.skills ul li:nth-of-type(9) img {
+	filter: drop-shadow(0px 0px 12px rgba(0,0,0,.4));
+}
+
 .workExperience {
 	display: grid;
 	grid-template-rows: auto 1fr;

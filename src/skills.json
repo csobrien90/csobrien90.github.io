@@ -50,13 +50,18 @@
 		"imageAlt": ""
 	},
 	{
+		"text": "Jest",
+		"imageSrc": "./skills/Jest_badge.webp",
+		"imageAlt": ""
+	},
+	{
 		"text": "Git, Github, Bitbucket",
 		"imageSrc": "./skills/Git_badge.webp",
 		"imageAlt": ""
 	},
 	{
-		"text": "WCAG 2.2",
-		"imageSrc": "./skills/WCAG_badge.webp",
+		"text": "Amazon Web Services",
+		"imageSrc": "./skills/AWS_badge.webp",
 		"imageAlt": ""
 	},
 	{
@@ -65,13 +70,18 @@
 		"imageAlt": ""
 	},
 	{
-		"text": "WordPress, WooCommerce",
-		"imageSrc": "./skills/WordPress_badge.webp",
+		"text": "Figma",
+		"imageSrc": "./skills/Figma_badge.png",
 		"imageAlt": ""
 	},
 	{
-		"text": "Amazon Web Services",
-		"imageSrc": "./skills/AWS_badge.webp",
+		"text": "WCAG 2.2",
+		"imageSrc": "./skills/WCAG_badge.webp",
+		"imageAlt": ""
+	},
+	{
+		"text": "WordPress, WooCommerce",
+		"imageSrc": "./skills/WordPress_badge.webp",
 		"imageAlt": ""
 	},
 	{

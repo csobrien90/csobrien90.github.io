@@ -6,7 +6,13 @@
 		"description": ""
 	},
 	{
-		"title": "Portfolio (this page!)",
+		"title": "Shows in Town",
+		"prodLink": "https://chado.dev/shows-in-town",
+		"githubLink": "https://github.com/csobrien90/shows-in-town",
+		"description": "Shows in Town is a web application that leverages Puppeteer and open APIs with a Node backend to scrape local venues, event calendars, band websites, etc. for upcoming live music shows and displays them in a single, easy to navigate timeline built with React."
+	},
+	{
+		"title": "Portfolio (this page 🎉)",
 		"prodLink": "#about",
 		"githubLink": "https://github.com/csobrien90/portfolio",
 		"description": "This site is built in React and uses all original components. Some of the cooler features (IMHO) include the dual-purpose navigation and section header, project slider, totally responsive layout, and original themed color block design, and serverless contact form functionality using AWS Lambda."
