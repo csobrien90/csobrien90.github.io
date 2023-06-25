@@ -208,10 +208,9 @@ About
 }
 
 #about img {
-	width: 100%;
-	height: 100%;
 	padding: 4em;
 	max-height: 80vh;
+	max-width: 80vw;
 }
 
 #about .imgBorderWrapper {
@@ -770,6 +769,11 @@ Media queries
 		"pic heading"
 		"pic about";
 		text-align: left;
+	}
+
+	#about img {
+		max-height: 90%;
+		max-width: 90%;
 	}
 
 	#experience {
