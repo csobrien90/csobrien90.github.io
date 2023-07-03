@@ -242,6 +242,7 @@ About
 #about p {
 	grid-area: about;
 	align-self: flex-start;
+	font-size: 20px;
 }
 
 /*
@@ -731,6 +732,10 @@ Media queries
 
 	#about {
 		gap: 3em 6em;
+	}
+
+	#about p {
+		font-size: 32px;
 	}
 	
 	.projects {
