@@ -1,0 +1,86 @@
+
+#interests {
+	background-color: var(--yellow);
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(40em, 1fr));
+	gap: 3em;
+	justify-content: space-around;
+}
+
+#interests .interestCard {
+	height: 50em;
+	padding: 0;
+	display: grid;
+	position: relative;
+	grid-template-rows: 24em 1fr;
+	overflow: hidden;
+}
+
+#interests .interestCard .h3Wrapper {
+	position: relative;
+	overflow: hidden;
+	height: 100%;
+}
+
+#interests .interestCard .h3Wrapper:hover h3 {
+	background-color: rgba(255, 255, 255, .8);
+	text-decoration: underline;
+	text-underline-offset: .1em;
+}
+
+#interests .interestCard h3 {
+	background-color: rgba(255,255,255,.6);
+	width: 100%;
+	text-align: left;
+	padding: .3em .8em;
+	color: black;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: 1;
+}
+
+#interests .interestCard p {
+	padding: 1em;
+	font-size: 2em;
+}
+
+#interests .interestCard .backgroundImg {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 1040px) {
+	#interests .interestCard:first-of-type, #interests .interestCard:last-of-type {
+		grid-column: span 2;
+		grid-template-rows: 1fr;
+	}
+	
+	#interests .interestCard:first-of-type h3, #interests .interestCard:last-of-type h3 {
+		bottom: 0;
+	}
+	
+	#interests .interestCard:first-of-type p, #interests .interestCard:last-of-type p {
+		position: absolute;
+		background-color: rgba(255,255,255,.8);
+		margin: 4% 5%;
+		padding: 2em;
+		width: 90%;
+		height: 72%;
+		font-size: 3em;
+		margin-top: 20em;
+		transition: all .5s;
+	}
+
+	#interests .interestCard:first-of-type:hover p, 
+	#interests .interestCard:first-of-type:focus p, 
+	#interests .interestCard:last-of-type:hover p,
+	#interests .interestCard:last-of-type:focus p {
+		margin-top: 1em;
+	}
+}

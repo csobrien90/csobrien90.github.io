@@ -1,6 +1,7 @@
 // import Slider from './Slider';
 import Skills from './Skills';
 import WorkExperience from './WorkExperience';
+import '../styles/experience.css';
 
 const Experience = ():JSX.Element => {
 	return(

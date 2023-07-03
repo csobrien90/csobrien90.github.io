@@ -1,4 +1,5 @@
 import headshot from '../media/headshot.webp';
+import '../styles/about.css';
 
 const About = (): JSX.Element => {
 	const divArr = [];

@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import links from '../data/links.json'
+import '../styles/navigation.css';
 
 const Navigation = (): JSX.Element => {
 
@@ -40,7 +41,7 @@ const Navigation = (): JSX.Element => {
 	const expand = () => { if (window.innerWidth < 769) setExpanded(!expanded) }
 
 	return (
-		<nav className='pageNav' onClick={expand} aria-expanded={expanded}>
+		<nav id='pageNav' onClick={expand} aria-expanded={expanded}>
 			{
 				links && links.map((link, index) => {
 					const activeClass = activeLink === link.displayText.toLowerCase() ? 'active' : '';

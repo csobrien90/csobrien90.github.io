@@ -1,5 +1,6 @@
 import ContactForm from './ContactForm';
 import SocialMediaLinks from './SocialMediaLinks';
+import '../styles/connect.css';
 
 const Connect = (): JSX.Element => {
 	let now = new Date();

@@ -1,6 +1,7 @@
 import InterestCard from './InterestCard';
 import interests from '../data/interests.json';
 import { Interest } from '@/types';
+import '../styles/interests.css';
 
 const Interests = () => {
 	// Randomize order of interests
