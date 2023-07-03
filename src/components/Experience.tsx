@@ -1,14 +1,14 @@
-// import Slider from './Slider';
-import Skills from './Skills';
+import Project from './Project';
 import WorkExperience from './WorkExperience';
 import '../styles/experience.css';
 
-const Experience = ():JSX.Element => {
+import projects from '../data/projects.json';
+
+const Experience = (): JSX.Element => {
 	return(
 		<section  id="experience">
 			<h2 className='sr-only'>Experience</h2>
-			{/* <Slider /> */}
-			<Skills />
+			{projects && projects.map((project, index) => <Project key={index} {...project} />)}
 			<WorkExperience />
 		</section>
 	)

@@ -1,0 +1,30 @@
+[
+	{
+		"title": "Shows in Town",
+		"prodLink": "https://chado.dev/shows-in-town",
+		"githubLink": "https://github.com/csobrien90/shows-in-town",
+		"description": "Shows in Town is a web application that leverages Puppeteer and open APIs with a Node backend to scrape local venues, event calendars, band websites, etc. for upcoming live music shows and displays them in a single, easy to navigate timeline built with React.",
+		"skills": ["React", "Node", "Jest", "Amazon Web Services"]
+	},
+	{
+		"title": "Portfolio (this page 🎉)",
+		"prodLink": "#about",
+		"githubLink": "https://github.com/csobrien90/portfolio",
+		"description": "This site is built in React and uses all original components. Some of the cooler features (IMHO) include the dual-purpose navigation and section header, project slider, totally responsive layout, and original themed color block design, and serverless contact form functionality using AWS Lambda.",
+		"skills": ["Typescript", "Git/Github", "Amazon Web Services"]	
+	},
+	{
+		"title": "Louisville Jazz Initiative",
+		"prodLink": "https://louisvillejazzinitiative.com",
+		"githubLink": "",
+		"description": "This is the website for the Louisville Jazz Initiative, a non profit organization I co-founded in April 2021. I built this website before knowing about mobile-first design, accessibilty standards, and CSS flexbox and am now in the process of updating it to reflect best practices.",
+		"skills": ["HTML5", "CSS3", "JavaScript"]	
+	},
+	{
+		"title": "Click2Read Chrome Browser Extension",
+		"prodLink": "https://chrome.google.com/webstore/",
+		"githubLink": "https://github.com/csobrien90/click2read",
+		"description": "Click2Read is a Chrome browser extension that allows you to highlight text on any webpage and have it read aloud to you. It uses the Web Speech API and is built with vanilla JavaScript.",
+		"skills": ["Advanced Web APIs", "Accessibility", "CSS3"]
+	}
+]

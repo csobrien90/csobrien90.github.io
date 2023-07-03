@@ -30,7 +30,7 @@
 		"imageAlt": ""
 	},
 	{
-		"text": "JavaScript, jQuery",
+		"text": "JavaScript",
 		"imageSrc": "./skills/JS_badge.webp",
 		"imageAlt": ""
 	},
@@ -55,7 +55,7 @@
 		"imageAlt": ""
 	},
 	{
-		"text": "Git, Github, Bitbucket",
+		"text": "Git/Github",
 		"imageSrc": "./skills/Git_badge.webp",
 		"imageAlt": ""
 	},
@@ -75,7 +75,7 @@
 		"imageAlt": ""
 	},
 	{
-		"text": "WCAG 2.2",
+		"text": "Accessibility",
 		"imageSrc": "./skills/WCAG_badge.webp",
 		"imageAlt": ""
 	},

@@ -23,3 +23,12 @@ export interface ContactFormLambdaResponse {
 	status: 200 | 500
 	message: string 
 }
+
+export interface ProjectData {
+	title: string
+	skills: string[]
+}
+
+export interface SkillsProps {
+	toShow: string[]
+}

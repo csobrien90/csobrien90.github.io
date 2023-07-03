@@ -1,11 +1,14 @@
 import skills from '../data/skills.json';
+import { SkillsProps } from '../types';
 
-const Skills = (): JSX.Element => {
+const Skills = ({ toShow }: SkillsProps): JSX.Element => {
+	console.log(skills);
 	return(
-		<article className='skills backgroundBox'>
-			<h3>Skills</h3>
+		<div className='skills backgroundBox'>
 			<ul>
-				{skills.map((skill, index) => {
+				{skills.filter((skill) => {
+					return toShow.includes(skill.text);
+				}).map((skill, index) => {
 					return (
 						<li className='backgroundBox' key={index}>
 							<img src={skill.imageSrc} alt={skill.imageAlt}></img>
@@ -14,7 +17,7 @@ const Skills = (): JSX.Element => {
 					)
 				})}
 			</ul>
-		</article>
+		</div>
 	)
 }
 
