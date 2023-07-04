@@ -5,16 +5,10 @@
 
 ## To Do
 
-### Projects
-
-- Significantly reduce Work Experience and just provide resume to download
-- Refactor project slider
-    - Limit number of projects with more details/pizzazz for each
-    - Remove slider altogether and integrate projects/skills
+- Refactor experience section
 
 ### General
 
-- Break up `index.css`
 - Color themes (Original, Light, Dark)
 - Adjust styles to generally look slicker and more professional
     - background box to be more radiant
