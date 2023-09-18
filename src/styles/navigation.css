@@ -24,7 +24,7 @@
 	overflow: hidden;
 }
 
-#pageNav a:hover, a.active {
+#pageNav a:hover, #pageNav a.active {
 	font-weight: bold;
 	background-color: rgba(255, 255, 255, .8);
 	box-shadow: 0 0 5px rgba(0, 0, 0, .3);

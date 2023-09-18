@@ -6,13 +6,18 @@
 ## To Do
 
 - Refactor experience section
+	- draw flowchart for ShowsInTown
+	- feature slideshow for Click2Read
+	- add Click2Read tool
+	- Easter eggs and counter for Portfolio
+	- basic styling
+	- create a themed graphic to tie projects together
 
-### General
-
-- Color themes (Original, Light, Dark)
-- Adjust styles to generally look slicker and more professional
+- Make styles slicker
     - background box to be more radiant
-    - shadows and other indications of depth
-    - More interactivity and better feel to interactive elements
+    - more shadows and indications of depth
+    - better feel to interactive elements
     - animations (transitions), and scrolls should have more natural movement
-- Make sure it is lightning fast - no glitching on scroll
+		- Interests scroll up
+
+- Color themes (Original, Dark, hidden bonus theme)
