@@ -1,7 +1,7 @@
 #experience {
 	background-color: var(--blue);
 	display: grid;
-	gap: 3em;
+	gap: 4em;
 }
 
 #experience h3 {
@@ -11,4 +11,27 @@
 
 #experience article {
 	display: grid;
+	gap: 2em;
+}
+
+#experience article p  {
+	font-size: 2em;
+}
+
+#experience a {
+	color: black;
+}
+
+#experience a:hover {
+	text-decoration: underline;
+}
+
+#experience .project-links {
+	display: grid;
+	gap: .5em;
+	width: fit-content;
+}
+
+#experience .project-links a, #resume-download a {
+	font-weight: bold;
 }

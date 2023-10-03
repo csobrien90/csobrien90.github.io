@@ -16,14 +16,16 @@
 #about .imgWrapper {
 	grid-area: pic;
 	position: relative;
-	width: 100%;
+	width: fit-content;
 	margin: 0 auto;
+	display: grid;
+	place-items: center;
 }
 
 #about img {
 	padding: 4em;
+	max-width: 100%;
 	max-height: 80vh;
-	max-width: 80vw;
 }
 
 #about .imgBorderWrapper {
@@ -76,11 +78,6 @@
 		"pic heading"
 		"pic about";
 		text-align: left;
-	}
-
-	#about img {
-		max-height: 90%;
-		max-width: 90%;
 	}
 }
 
