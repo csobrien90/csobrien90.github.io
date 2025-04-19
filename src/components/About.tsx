@@ -2,7 +2,7 @@ import headshot from '../media/headshot.webp';
 import '../styles/about.css';
 
 const About = (): JSX.Element => {
-	const divArr = [];
+	const divArr: number[] = [];
 	for (let i = 0; i < 25; i++ ) divArr.push(i);
 
 	return(
