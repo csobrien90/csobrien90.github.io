@@ -1,9 +1,9 @@
 [
 	{
-		"title": "My Projects",
-		"prodLink": "",
-		"githubLink": "",
-		"description": ""
+		"title": "Band Book",
+		"prodLink": "https://bandbook.s3.us-east-2.amazonaws.com/index.html",
+		"githubLink": "https://github.com/csobrien90/band-book",
+		"description": "The BandBook application is a tool for ear musicians. It is designed to help users learn songs by ear, transcribe, practice, study, and share and collaborate with others. On the technical side, this application has an (arguably) overzealous commitment to modern web standards. The stack is comprised of exclusively modern vanilla HTML5, CSS3, and JavaScript (ES6+). All JavaScript is written in an Object-Oriented Programming (OOP) style and type safety is enforced through JSDoc comments. The application is local first and uses IndexedDB for data storage."
 	},
 	{
 		"title": "Shows in Town",
@@ -21,34 +21,5 @@
 		"title": "Lighthouse Audit Automation",
 		"githubLink": "https://github.com/csobrien90/lighthouse-audit-automation",
 		"description": "This is a node package to automate Google Lighthouse audits on multiple sites simultaneously. Given a root URL and array of directories/subdirectories/pages, this outputs a .csv containing two tables (mobile and desktop) with metrics for performance, accessibility, adherence to best practices, and SEO."
-	},
-	{
-		"title": "Starter Pack",
-		"githubLink": "https://github.com/csobrien90/starter-pack",
-		"description": "Starter Pack is a WordPress plugin I wrote to assist with devving on custom WordPress themes and plugins. It provides helpful utility functions for debugging and logging throughout the development process as well as a host of security features perfect for jump starting work on any new WordPress site."
-	},
-	{
-		"title": "My Music Page",
-		"prodLink": "https://obrientrombone.com",
-		"githubLink": "https://github.com/csobrien90/obrien-trombone",
-		"description": "My landing page as a professional musician. It is a mobile-first, responsive site that uses semantic HTML5, CSS3, JavaScript, and PHP. Since I initially built this site as the final project of my Code Louisville Front End Web Development course, it's packed with fun JS scripts. Check out the README in my GitHub repo for a full list of design features."
-	},
-	{
-		"title": "Louisville Jazz Initiative",
-		"prodLink": "https://louisvillejazzinitiative.com",
-		"githubLink": "",
-		"description": "This is the website for the Louisville Jazz Initiative, a non profit organization I co-founded in April 2021. I built this website before knowing about mobile-first design, accessibilty standards, and CSS flexbox and am now in the process of updating it to reflect best practices."
-	},
-	{
-		"title": "Code Breaker",
-		"prodLink": "https://csobrien90.github.io/mastermind",
-		"githubLink": "https://github.com/csobrien90/mastermind",
-		"description": "This is my take on the classic paper and pencil game: Mastermind. The notebook paper styling has been fun to experiment with but needs a little more tweaking to be made more responsive. Check it out, play to your hearts content (it's pretty addicting!) and offer any suggestions."
-	},
-	{
-		"title": "Fiber Coven",
-		"prodLink": "https://fibercoven.com",
-		"githubLink": "https://github.com/csobrien90/fiber-coven",
-		"description": "Fiber Coven is a weekly witchy themed podcast about knitting, spinning, and everything fiber related. Making this website was a great opportunity to work with an established brand and integrate third party widgets like a PodBean player and MailChimp newsletter sign up into the design."
 	}
 ]
