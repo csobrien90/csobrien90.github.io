@@ -11,9 +11,10 @@
 		font-weight: 600;
 		text-decoration: none;
 
-		&:hover {
+		&:hover, &:focus {
 			color: var(--yellow);
 			text-decoration: underline;
+			text-shadow: var(--shadow);
 		}
 	}
 	
@@ -59,7 +60,8 @@
 						}
 					}
 					
-					&:not([open]) summary:hover::after, &[open] summary::after {
+					&:not([open]) summary:hover::after,
+					&[open] summary::after {
 						content: "";
 						display: block;
 						position: absolute;
@@ -96,12 +98,24 @@
 			gap: 2rem;
 			grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
 
+			h4 {
+				text-align: center;
+				width: 100%;
+			}
+
 			article {
 				display: grid;
 				gap: 1rem;
+				align-content: start;
+
+				p {
+					font-size: 1rem;
+				}
 	
 				img {
 					padding-block: .5rem;
+					max-height: 160px;
+					justify-self: center;
 				}
 			}
 		}
