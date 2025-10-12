@@ -2,36 +2,139 @@
 	background-color: var(--blue);
 	display: grid;
 	gap: 3em;
-
-	h3 {
-		text-align: center;
-		margin-bottom: 1em;
+	
+	p {
+		font-size: 20px;
 	}
 
-	#project-slider {
+	a {
+		font-weight: 600;
+		text-decoration: none;
+
+		&:hover {
+			color: var(--yellow);
+			text-decoration: underline;
+		}
+	}
+	
+	.bandbook {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-		gap: 2rem 4rem;
-
-		.card {
+		grid-template-columns: 33% 1fr;
+		gap: 4em;
+		
+		header {
 			display: grid;
-			gap: 1rem;
-			justify-items: center;
-			text-align: center;
+			gap: 1em;
+			align-content: start;
+		}
+		
+		.content {
+			display: grid;
+			gap: 2em;
 
-			.linkWrapper {
-				width: 100%;
-				display: flex;
-				gap: 6rem;
-				justify-content: center;
-
-				img {
-					filter: brightness(0);
-					&:hover {
-						filter: brightness(0) invert(1);
+			h4 {
+				margin-block-end: .5rem;
+			}
+			
+			.technical {
+				display: grid;
+				gap: 1em;
+				align-content: start;
+			}
+			
+			.features {
+				display: grid;
+				
+				details {
+					summary {
+						margin-inline-start: -0.5em;
+						padding: .5em;
+						font-size: 2.5em;
+						font-weight: bold;
+						position: relative;
+						
+						&::marker, &::-webkit-details-marker {
+							display: none;
+							content: "";
+						}
+					}
+					
+					&:not([open]) summary:hover::after, &[open] summary::after {
+						content: "";
+						display: block;
+						position: absolute;
+						width: 100%;
+						height: 100%;
+						inset: 0;
+						background: rgba(255,255,255,.1);
+						z-index: 3;
+					}
+					
+					&:not([open]) summary {
+						cursor: pointer;
+					}
+					
+					p {
+						padding: 1em .5em;
 					}
 				}
 			}
+			
 		}
+	}
+	
+	.other-projects {
+		display: grid;
+
+		h3 {
+			grid-column: 1 / -1;
+			margin-block-end: 1rem;
+		}
+
+		> div {
+			display: grid;
+			gap: 2rem;
+			grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
+
+			article {
+				display: grid;
+				gap: 1rem;
+	
+				img {
+					padding-block: .5rem;
+				}
+			}
+		}
+	}
+
+	.lightbox {
+		cursor: zoom-in;
+
+		&:hover {
+			filter: brightness(.8);
+		}
+	}
+}
+
+body:has(.screenshot-modal:open) {
+	overflow: hidden;
+}
+
+.screenshot-modal {
+	max-width: unset;
+	max-height: unset;
+	display: grid;
+	place-items: center;
+	background: transparent;
+	border: none;
+	outline: none;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	inset: 0;
+	padding: 0;
+
+	&::backdrop {
+		background: rgba(0,0,0,.6);
 	}
 }

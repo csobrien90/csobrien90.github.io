@@ -1,6 +1,24 @@
 import { useEffect, useState } from 'react';
-import links from '../data/links.json'
 import '../styles/navigation.css';
+
+const links = [
+	{
+		displayText: "About",
+		href: "#about"
+	},
+	{
+		displayText: "Experience",
+		href: "#experience"
+	},
+	{
+		displayText: "Interests",
+		href: "#interests"
+	},
+	{
+		displayText: "Connect",
+		href: "#connect"
+	}
+]
 
 const Navigation = (): JSX.Element => {
 
