@@ -35,10 +35,18 @@ Default styles
 
 html {
 	scroll-behavior: smooth;
+	scroll-snap-type: y mandatory;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
 }
 
 body {
 	font-size: 10px;
+	scroll-snap-type: y mandatory;
 }
 
 h1 {
@@ -97,12 +105,15 @@ img {
 main {
 	position: relative;
 	overflow-x: hidden;
+	scroll-snap-type: y mandatory;
 }
 
 section {
 	min-height: 100vh;
 	padding: 9em 2em 2em;
 	box-shadow: var(--shadow);
+	scroll-snap-align: start;
+	scroll-snap-stop: always;
 }
 
 .backgroundBox, .focus, .prev, .next {

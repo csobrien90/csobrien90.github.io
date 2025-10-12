@@ -5,6 +5,14 @@
 	grid-template-columns: repeat(auto-fill, minmax(40em, 1fr));
 	gap: 3em;
 	justify-content: space-around;
+
+	.backgroundBox {
+		max-width: calc(100% - 4.5em);
+
+		@media screen and (min-width: 500px) {
+			max-width: 100%;
+		}					
+	}
 }
 
 #interests .interestCard {
