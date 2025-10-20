@@ -8,9 +8,15 @@ const Connect = (): JSX.Element => {
 	return(
 		<section id="connect">
 			<h2 className='sr-only'>Connect</h2>
-			<p className='connectText backgroundBox'>Whether you have questions, comments, requests, or just want to chat, I'd love to hear from you! 
-				Use this contact form to email me or connect with me on social media.
-			</p>
+			<div className='connectText backgroundBox'>
+				<p>
+					Whether you have questions, comments, requests, or just want to chat, I'd love to hear from you! 
+					Use this contact form to email me or connect with me on social media.
+				</p>
+				<p>
+					Looking for a less direct way of connecting? Check out <a href="/blog">my blog</a> where I share insights, updates, and stories.
+				</p>
+			</div>
 			<ContactForm />
 			<SocialMediaLinks />
 			<footer>
