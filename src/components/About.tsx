@@ -14,7 +14,7 @@ const About = (): JSX.Element => {
 				</div>
 			</div>
 			<h1>Chad O'Brien</h1>
-			<p>Hi! I'm a full stack JavaScript developer and freelance musician based in Louisville, Kentucky. I currently work as a Software Engineer for Switcher, serve as Operations Manager for the Louisville Jazz Initiative, and co-lead Louisville space funk group, New Gunk.
+			<p>Hi! I'm a full stack JavaScript developer and freelance musician based in Louisville, Kentucky. I currently work as a freelance Software Engineer, serve as Operations Manager for the Louisville Jazz Initiative, and co-lead Louisville space funk group, New Gunk.
 			</p>
 		</section>
 	)

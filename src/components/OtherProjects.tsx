@@ -1,5 +1,4 @@
 import Lightbox from "./Lightbox"
-import switcherScreenshot from '../images/switcher.png';
 import accordionScreenshot from '../images/accordion.png';
 import extensionScreenshot from '../images/json-to-console.png';
 
@@ -17,20 +16,6 @@ const projects = [
 			Behind the scenes, I created an admin dashboard to gain insights on conversion rates and patterns in customer
 			behavior. You can see <a target='_blank' href='//kittywithacupcake.com/pages/build-your-pronoun-pals-pin-set'>this component in production</a>
 			&nbsp;or check out the <a target='_blank' href='//github.com/csobrien90/accordion-selector'>source code on GitHub</a>.
-		</>
-	},
-	{
-		title: "Software Engineer - Switcher",
-		img: switcherScreenshot,
-		alt: "A screenshot of the Switcher Dashboard, a platform for managing live streams and video content",
-		content: <>
-			Since April 2024, I have been working at Switcher, a Louisville-based tech
-			startup offering an end to end solution for multicamera content creation, live
-			streaming, and video hosting. My work is focused on Switcher's web presence,
-			managing our custom, embeddable video player, our hosted video management dashboard,
-			and our marketing site, a robust, custom HubSpot theme. You
-			can <a target="_blank" href="//switcherstudio.com">learn more about Switcher's products here</a> or 
-			see our custom video player in action on <a target="_blank" href="//player.switcherstudio.com/watch?c=d9695000-f826-4969-8bac-734a54a9e0c9">my Switcher Catalog page</a>.
 		</>
 	},
 	{
